@@ -1,22 +1,22 @@
 body {
-  background: white;
+  background: rgba(25, 23, 101, 1);
 }
 
 #navbar {
   display: flex;
-  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
+  color: white;
   width: 100%;
-  background-color: white;
   z-index: 10;
   padding: 20px 20px;
+  justify-content: flex-end;
 }
 
 #navbar a {
   margin-left: 20px;
-  color: #344563;
+  color: white;
   font-size: 20px;
   font-weight: 400;
   text-decoration: non;
@@ -31,8 +31,8 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  margin-top: 30px;
-  margin-bottom: 5px;
+  color: white;
+  margin-top: 0ch;
 }
 
 #name {
@@ -41,28 +41,27 @@ body {
   font-family: sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 50px;
   align-items: center;
-  color: #091e42;
-  margin: 100px 84px 0 16px;
+  color: white;
   display: flex;
   flex-wrap: wrap;
 }
 
 p {
-  width: 920px;
-  height: 98px;
+  width: 900px;
+  height: 90px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #344563;
+  color: white;
 }
 
 #contact {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   padding: 20px 10px;
   background-color: lightgray;
@@ -77,4 +76,9 @@ p {
   text-decoration: non;
   display: flex;
   margin-right: 2rem;
+}
+hr {
+  color: white;
+  background-color: antiquewhite;
+  width: 70%;
 }
