@@ -1,0 +1,80 @@
+body {
+  background: #ffffff;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  padding: 20px 20px;
+}
+
+#navbar a {
+  margin-left: 20px;
+  color: #344563;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: non;
+  display: flex;
+  margin-right: 2rem;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+#name {
+  width: 900px;
+  height: 120px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  align-items: center;
+  color: #091e42;
+  margin: 100px 84px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  width: 920px;
+  height: 98px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+}
+#contact {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: lightgray;
+  margin: auto;
+}
+
+#contact a {
+  margin-left: 20px;
+  color: #344563;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: non;
+  display: flex;
+  margin-right: 2rem;
+}
