@@ -53,13 +53,13 @@ body {
 p {
   width: 920px;
   height: 98px;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: #344563;
 }
+
 #contact {
   display: flex;
   justify-content: flex-start;
