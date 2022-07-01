@@ -32,7 +32,6 @@ body {
   width: 100%;
   height: 100vh;
   color: white;
-  margin-top: 0ch;
 }
 
 #name {
@@ -77,6 +76,7 @@ p {
   display: flex;
   margin-right: 2rem;
 }
+
 hr {
   color: white;
   background-color: antiquewhite;
