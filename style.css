@@ -82,3 +82,12 @@ hr {
   background-color: antiquewhite;
   width: 70%;
 }
+a:hover {
+  color: red;
+}
+a:active {
+  color: white;
+}
+a:disabled {
+  color: gray;
+}
