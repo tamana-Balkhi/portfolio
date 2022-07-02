@@ -31,6 +31,14 @@ body {
   border-bottom: 1px grey solid;
 }
 
+.my-prj h2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 30px;
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
 #profile h1 {
   color: #7d73fc;
   font-size: 48px;
@@ -42,6 +50,14 @@ body {
   font-size: 32px;
   font-weight: 500;
   margin-top: -40px;
+}
+
+.my-prj .prjs p {
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 60px 0;
 }
 
 #profile p {
@@ -110,7 +126,6 @@ body {
   color: #a2a3ae;
 }
 
-
 .recent-projects {
   display: grid;
   grid-template-rows: auto;
@@ -138,7 +153,6 @@ body {
   background-position-y: 150px;
 }
 
-
 .prj-3 {
   background-image: url(./images/Ellipse22@2x.png);
   background-repeat: no-repeat;
@@ -146,7 +160,6 @@ body {
   background-position-y: 150px;
   background-position: right;
 }
-
 
 .my-prj {
   display: flex;
@@ -157,27 +170,11 @@ body {
   margin: 0 auto;
 }
 
-.my-prj h2 {
-  border-bottom: 1px solid grey;
-  padding-bottom: 30px;
-  color: #9490ff;
-  font-size: 40px;
-  font-weight: 500;
-}
-
 .my-prj .prjs h3 {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
   margin: 55px 0;
-}
-
-.my-prj .prjs p {
-  color: #dcdce8;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  margin: 60px 0;
 }
 
 .my-prj .prjs img {
@@ -200,7 +197,6 @@ body {
   font-size: 15px;
 }
 
-
 .btn {
   padding: 20px;
   background-color: #7d73fc;
@@ -217,4 +213,14 @@ body {
 
 .btn:active {
   background-color: #5e42d7;
+}
+
+.about_p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #c8c8d4;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 100px;
 }
