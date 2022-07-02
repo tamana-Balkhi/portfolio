@@ -207,7 +207,7 @@ body {
   border: none;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
   background-color: red;
 }
