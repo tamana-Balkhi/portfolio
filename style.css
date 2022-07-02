@@ -116,14 +116,14 @@ body {
   grid-template-rows: auto;
 }
 
-.projects-container{
+.recent-prj-container {
   background-image: url(./images/Ellipse\ 19@2x.png);
   background-repeat: no-repeat;
   background-size: 300px;
   background-position-y: 150px;
 }
 
-.projs-1 {
+.prj-1 {
   background-image: url(./images/Ellipse20.png);
   background-repeat: no-repeat;
   background-size: 150px;
@@ -131,3 +131,90 @@ body {
   background-position-y: 200px;
 }
 
+.prj-2 {
+  background-image: url(./images/Ellipse21@2x.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position-y: 150px;
+}
+
+
+.prj-3 {
+  background-image: url(./images/Ellipse22@2x.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position-y: 150px;
+  background-position: right;
+}
+
+
+.my-prj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.my-prj h2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 30px;
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.my-prj .prjs h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 55px 0;
+}
+
+.my-prj .prjs p {
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 60px 0;
+}
+
+.my-prj .prjs img {
+  object-fit: contain;
+}
+
+.my-prj .prjs ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.my-prj .prjs ul li {
+  border-left: 1px grey solid;
+  padding-left: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+
+.btn {
+  padding: 20px;
+  background-color: #7d73fc;
+  color: #edecff;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #7d73fc;
+}
+
+.btn:active {
+  background-color: #5e42d7;
+}
