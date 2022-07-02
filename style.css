@@ -109,3 +109,25 @@ body {
   align-items: center;
   color: #a2a3ae;
 }
+
+
+.recent-projects {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.projects-container{
+  background-image: url(./images/Ellipse\ 19@2x.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position-y: 150px;
+}
+
+.projs-1 {
+  background-image: url(./images/Ellipse20.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: right;
+  background-position-y: 200px;
+}
+
