@@ -14,6 +14,18 @@ body {
   justify-content: flex-end;
 }
 
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: white;
+}
+
+a:disabled {
+  color: gray;
+}
+
 #navbar a {
   margin-left: 20px;
   color: white;
@@ -23,12 +35,12 @@ body {
   display: flex;
   margin-right: 2rem;
 }
- #profile {
+
+#profile {
   width: 75%;
   margin: auto;
   text-align: center;
   border-bottom: 1px grey solid;
-  
 }
 
 #profile h1 {
@@ -49,7 +61,6 @@ body {
   font-size: 20px;
   line-height: 28px;
 }
-
 
 .skills {
   width: 100vw;
@@ -86,8 +97,6 @@ body {
   font-weight: 400;
 }
 
-
-
 #contact {
   display: flex;
   justify-content: center;
@@ -111,13 +120,4 @@ hr {
   color: white;
   background-color: antiquewhite;
   width: 70%;
-}
-a:hover {
-  color: red;
-}
-a:active {
-  color: white;
-}
-a:disabled {
-  color: gray;
 }
