@@ -1,0 +1,111 @@
+body {
+  background-color: #191765;
+  background-image: url(./images/Ellipse\ 18@2x.png);
+  background-repeat: no-repeat;
+  background-position-y: 50px;
+  background-size: 100px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nav-bar h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-bar img {
+  height: 30px;
+}
+
+#profile {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px grey solid;
+}
+
+#profile h1 {
+  color: #7d73fc;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#profile h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: -40px;
+}
+
+#profile p {
+  color: #c8c8d4;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.skills {
+  width: 100vw;
+  background-image: url(./images/Ellipse\ 19.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 140px;
+  background-position-y: 10px;
+}
+
+.skills .languages {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  gap: 50px;
+  flex-wrap: wrap;
+  border-bottom: 1px grey solid;
+}
+
+.skills .languages ul {
+  list-style: none;
+}
+
+.skills .languages ul .list {
+  color: #9490ff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skills .languages ul li {
+  color: #f5f5ff;
+  font-size: 15px;
+  line-height: 35px;
+  font-weight: 400;
+}
+
+.contact {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 15px;
+}
+
+.contact .hidden {
+  visibility: hidden;
+}
+
+.contact .work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a2a3ae;
+}
