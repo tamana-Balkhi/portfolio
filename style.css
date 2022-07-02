@@ -207,8 +207,9 @@ body {
   border: none;
 }
 
-.btn:hover {
-  background-color: #7d73fc;
+.btn:hover{
+  cursor: pointer;
+  background-color: red;
 }
 
 .btn:active {
