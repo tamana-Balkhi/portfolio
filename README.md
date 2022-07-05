@@ -1,6 +1,6 @@
 # portfolio
 
-microvese first programming priject
+microvese first programming project
 
 Built With
 html css and use from github
