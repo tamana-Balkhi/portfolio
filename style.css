@@ -226,6 +226,25 @@ body {
   margin-bottom: 100px;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-form p:first-of-type{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #F5F5FF;
+  width: 327px;
+  height: 105px;
+}
+
 .contact-form p:last-of-type{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -235,3 +254,40 @@ body {
   text-align: center;
   color: #ebebff;
 }
+
+.contact-form form ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-form form ul li{
+  list-style: none;
+}
+
+.contact-form form ul li input {
+  width: 327px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.contact-form form ul li textarea {
+  width: 327px;
+  height: 148px;
+  margin-bottom: 40px;
+}
+
+.contact-form h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9390ff;
+  text-align: center;
+}
+
