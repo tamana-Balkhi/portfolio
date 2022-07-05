@@ -60,6 +60,32 @@ body {
   margin: 60px 0;
 }
 
+.contact-form p:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  width: 327px;
+  height: 105px;
+}
+
+
+.contact-form p:last-of-type {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
 #profile p {
   color: #c8c8d4;
   font-size: 20px;
@@ -230,44 +256,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.contact-form p:first-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #F5F5FF;
-  width: 327px;
-  height: 105px;
-}
-
-.contact-form p:last-of-type{
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
-}
-
-.contact-form form ul{
+.contact-form form ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
   padding: 0;
-
 }
 
-.contact-form form ul li{
+.contact-form form ul li {
   list-style: none;
 }
 
@@ -283,11 +282,11 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #81818C;
+  color: #81818c;
   padding: 15px 16px;
- }
+}
 
- .contact-form form ul li input:last-of-type::placeholder {
+.contact-form form ul li input:last-of-type::placeholder {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -296,7 +295,7 @@ body {
   display: flex;
   align-items: center;
   color: #191765;
- }
+}
 
 .contact-form form ul li textarea {
   width: 327px;
@@ -309,8 +308,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 24px; 
-  color: #81818C;
+  line-height: 24px;
+  color: #81818c;
   padding: 12px 12px;
 }
 
@@ -326,6 +325,3 @@ body {
   color: #9390ff;
   text-align: center;
 }
-
-
-
