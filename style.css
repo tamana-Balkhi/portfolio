@@ -108,9 +108,9 @@ body {
   justify-content: space-between;
 }
 
-.contact .icons {
+.icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
   gap: 15px;
 }
@@ -224,4 +224,14 @@ body {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 100px;
+}
+
+.contact-form p:last-of-type{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
