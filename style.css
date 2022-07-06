@@ -256,13 +256,23 @@ body {
   border: none;
 }
 
-.btn:hover {
-  cursor: pointer;
-  background-color: red;
+.btn:enabled {
+  cursor: pointe;
+  background: #7D73FC;
 }
 
 .btn:active {
-  background-color: #5e42d7;
+  background-color:#5E42D7;
+}
+
+.btn:hover {
+  background: #7D73FC;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.btn:disabled {
+  background: #2A2B33;
+  color:#C8C8D4;
 }
 
 .about_p {
