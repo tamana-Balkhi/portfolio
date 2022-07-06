@@ -39,6 +39,18 @@ body {
   font-weight: 500;
 }
 
+.contact-form h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9390ff;
+}
+
 #profile h1 {
   color: #7d73fc;
   font-size: 48px;
@@ -75,7 +87,6 @@ body {
   height: 105px;
 }
 
-
 .contact-form p:last-of-type {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -110,6 +121,14 @@ body {
   border-bottom: 1px grey solid;
 }
 
+.contact-form form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .skills .languages ul {
   list-style: none;
 }
@@ -118,6 +137,10 @@ body {
   color: #9490ff;
   font-size: 12px;
   font-weight: 500;
+}
+
+.contact-form form ul li {
+  list-style: none;
 }
 
 .skills .languages ul li {
@@ -258,18 +281,6 @@ body {
   align-items: center;
 }
 
-.contact-form form ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-form form ul li {
-  list-style: none;
-}
-
 .contact-form form ul li input {
   width: 327px;
   height: 48px;
@@ -277,7 +288,7 @@ body {
 }
 
 .contact-form form ul li input:first-of-type::placeholder {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -287,7 +298,7 @@ body {
 }
 
 .contact-form form ul li input:last-of-type::placeholder {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -304,24 +315,11 @@ body {
 }
 
 .contact-form form ul li textarea::placeholder {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #81818c;
   padding: 12px 12px;
-}
-
-.contact-form h2 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #9390ff;
-  text-align: center;
 }
