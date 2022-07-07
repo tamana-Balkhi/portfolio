@@ -335,3 +335,108 @@ body {
   color: #81818c;
   padding: 12px 12px;
 }
+
+@media (min-width: 768px) {
+  body {
+    background-color: #191765;
+    background-image: url(./images/header@2x.png);
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-size: 184px;
+  }
+
+  .desktop-v {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .desktop-v ul li {
+    margin: 26px;
+    list-style: none;
+  }
+
+  #profile {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .profile h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 105px;
+    text-align: center;
+    color: #9391ff;
+  }
+
+  .profile h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #dfe1e6;
+  }
+
+  .profile p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #b3bac5;
+    margin-bottom: 33px;
+    justify-content: center;
+  }
+
+  .skills {
+    width: 100%;
+    background-image: url(./images/circle2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 226px;
+    background-position-y: -10px;
+  }
+
+  .skills .languages {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+    border-bottom: 1px grey solid;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact .work {
+    width: 47px;
+    height: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+
+    /* identical to box height, or 160% */
+
+    text-align: center;
+
+    /* Neutrals/N60 */
+
+    color: #b3bac5;
+  }
+}
+
