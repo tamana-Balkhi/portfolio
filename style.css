@@ -14,6 +14,7 @@ body {
   align-items: center;
 }
 
+
 .nav-bar h2 {
   color: #fff;
   font-size: 20px;
@@ -336,107 +337,135 @@ body {
   padding: 12px 12px;
 }
 
+
+@media (max-width: 767px) {
+  .desktop-v {
+    display: none;
+  }
+
+}
+
 @media (min-width: 768px) {
   body {
-    background-color: #191765;
-    background-image: url(./images/header@2x.png);
-    background-repeat: no-repeat;
-    background-position-y: 50px;
-    background-size: 184px;
-  }
+  background-color: #191765;
+  background-image: url(./images/header@2x.png);
+  background-repeat: no-repeat;
+  background-position-y: 50px;
+  background-size: 184px;
+}
 
-  .desktop-v {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
+.mobile-v{
+  display: none;
+}
+.nav-bar .desktop-h {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 8px;
+}
 
-  .desktop-v ul li {
-    margin: 26px;
-    list-style: none;
-  }
+.desktop-h .desk-header {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
 
-  #profile {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-  }
+.nav-bar .desktop-h .h {
+  margin: 0 10px;
+}
 
-  .profile h1 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 90px;
-    line-height: 105px;
-    text-align: center;
-    color: #9391ff;
-  }
+.nav-bar .desktop-h a {
+  text-decoration: none;
+  color: #fff;
+}
+.profile {
+  width:45%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
 
-  .profile h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-    color: #dfe1e6;
-  }
+.profile h1 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 90px;
+line-height: 105px;
+text-align: center;
+color: #9391FF;
+}
 
-  .profile p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.profile h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #DFE1E6;
+}
+
+.profile p {
+   font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    text-align: center;
-    color: #b3bac5;
-    margin-bottom: 33px;
-    justify-content: center;
   }
 
-  .skills {
-    width: 100%;
+.skills {
+    width: 100vw;
     background-image: url(./images/circle2.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 226px;
-    background-position-y: -10px;
+    background-size: 150px;
+    background-position-y: 120px;
   }
 
-  .skills .languages {
-    display: flex;
-    width: 75%;
-    margin: 0 auto;
-    gap: 50px;
-    flex-wrap: wrap;
+
+  .skills .ul{
+     display: flex;
+    justify-content: space-between;
+    border-top: 1px grey solid;
+    flex-wrap: nowrap;
     border-bottom: 1px grey solid;
   }
 
-  .contact {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .contact .work {
-    width: 47px;
-    height: 32px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
-
-    /* identical to box height, or 160% */
-
-    text-align: center;
-
-    /* Neutrals/N60 */
-
-    color: #b3bac5;
-  }
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
+
+.contact .work {
+  display:none; 
+}
+
+.contact .work {
+ width: 47px;
+height: 32px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+color: #B3BAC5;
+}
+
+.my-prj {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.my-prj h2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 30px;
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+  justify-content: flex-start;
+}
+
+}
+  
 
