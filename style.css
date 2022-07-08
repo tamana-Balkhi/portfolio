@@ -479,6 +479,16 @@ body {
     margin: 10px;
   }
 
+  .media-email p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
+
   .my-works .projects p {
     color: #dcdce8;
     font-size: 16px;
@@ -538,16 +548,4 @@ body {
     width: 684px;
     height: 105px;
   }
-
- .media-email p {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
-}
-
-
 }
