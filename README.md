@@ -1,21 +1,76 @@
-# portfolio
+#  Portfolio project
 
-microvese first programming project
+> This Project is a clone of a Portfolio template from figma
 
-Built With
-html css and use from github
+## Built With
 
-Getting Started
-This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
+- HTML/CSS
+- NPM, Git, Github
 
-- Go to the principal page of this repertory.
-- In the top right corner, you will find the button "Code" in the color green.
-- There, copy the link (HTTPS) using the established button.
-- Open the terminal Git on your computer.
-- Define the position where you want to clone the repertory.
-- After you are in the destiny folder, type the next command on your Git terminal: git clone "paste the HTTPS link"
-- If everything was ok, your terminal will send to you information about your download.
-- Finally, you could go to Visual Studio Code and open the folder with your new repository and start to work.
+## Live Demo
+
+dont have demo
+
+## Getting Started
+
+**this website can be viewd better on the Mobile screen size and desktop size**
+
+
+
+**The purpose of these project is to build the Mobile interface of a portfolio website using the figma template. 
+
+ for running of this project follow these  steps.
+
+## Clone The Repositiry to your local machine by following the steps below
+
+Step 1: Type the following command into a git shell
+
+git clone https://github.com/tamana-Balkhi/Portfolio-Microverse.git
+
+
+
+### Prerequisites
+
+1. Node package Manager(NPM)
+
+- Text editor
+
+### Setup
+
+Set up folder as:
+
+1. /PORTFOLIO-MICROVERSE -.github/workflows - linters.yml
+   - images
+   - .hintrc
+   - .stylelintrc.json
+   - index.html
+   - LICENSE
+   - Package-lock.json
+   - Package.json
+   - style.css
+
+### Install
+
+Run the following commands to install dependencies
+
+```
+
+npm install --save-dev hint@7.x
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+```
+
+### Usage
+
+run these commonds to avoid linters errors```
+
+npx hint .
+npx stylelint "**/*.{css,scss}"
+
+```
+
+### Deployment
+
 
 👤 Author1
 
