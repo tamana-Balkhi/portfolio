@@ -100,7 +100,7 @@ body {
 
 .icons li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 3px;
 }
 
 .contact-form form ul li {
@@ -195,14 +195,6 @@ body {
   margin: 55px 0;
 }
 
-.contact p {
-  text-align: center;
-  line-height: 30px;
-  font-family: 'inter', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .my-works .projects p {
   color: #dcdce8;
   font-size: 20px;
@@ -245,7 +237,6 @@ body {
   margin-bottom: 40px;
   border: none;
   cursor: pointer;
-  transition: all 1s linear;
 }
 
 .btn:enabled {
@@ -287,11 +278,16 @@ body {
   color: #9390ff;
 }
 
+.media-email .icons li {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .contact-form p:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -302,7 +298,7 @@ body {
   height: 105px;
 }
 
-.contact-form p:last-of-type {
+.media-email p:last-of-type {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -319,7 +315,7 @@ body {
 }
 
 .contact-form form ul li input:first-of-type::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -329,7 +325,7 @@ body {
 }
 
 .contact-form form ul li input:last-of-type::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -346,7 +342,7 @@ body {
 }
 
 .contact-form form ul li textarea::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -367,6 +363,11 @@ body {
   .contact .h2-desktop {
     display: none;
   }
+  hr {
+    display: none;
+  }
+
+
 }
 
 @media (min-width: 768px) {
@@ -505,6 +506,37 @@ body {
     font-size: 15px;
   }
 
+   .prj-1 img {
+    height: 270px;
+  }
+
+  .prjs img {
+     height: 270px;
+  }
+
+  .prj-2 img {
+    height: 270px;
+  }
+
+  .prj-3 img {
+    height: 270px;
+  }
+
+  .my-works h2 {
+    width: 100%;
+    border-bottom: none;
+    color: #9490ff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left !important;
+  }
+
+  .my-recent-works .divider {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin-bottom: 20px;
+  }
   .contact-form form ul li input {
     width: 684px;
     height: 48px;
@@ -516,16 +548,26 @@ body {
     height: 148px;
     margin-bottom: 40px;
   }
+.btn {
+    padding: 10px;
+    background-color: #7d73fc;
+    color: #edecff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
 
   #button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    gap: 10px;
-    width: 160px;
-    height: 48px;
-    background: #9390ff;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+   hr {
+     height: 1px;
+    width: 100%;
+    background: #3A3837;
+    margin-bottom: 20px;
+    
   }
 
   .media-email {
