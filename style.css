@@ -367,6 +367,17 @@ body {
     display: none;
   }
 
+  .media-email {
+   margin:0 80px;
+  }
+
+  .media-email  .icons li{
+    display: inline-block;
+    margin: 0 5px;
+
+
+  }
+
 
 }
 
