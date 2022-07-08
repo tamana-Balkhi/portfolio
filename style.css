@@ -521,6 +521,7 @@ body {
   .media-email {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .contact-form p:first-of-type {
@@ -537,4 +538,16 @@ body {
     width: 684px;
     height: 105px;
   }
+
+ .media-email p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+
 }
