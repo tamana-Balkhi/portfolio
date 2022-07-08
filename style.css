@@ -164,6 +164,17 @@ body {
   gap: 15px;
 }
 
+@keyframes icon-rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.icons li a img:hover {
+  animation-name: icon-rotation;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
 .contact .hidden {
   visibility: hidden;
 }
