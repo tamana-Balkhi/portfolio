@@ -80,6 +80,14 @@ body {
   width: 100%;
 }
 
+.contact-form form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .skills .Languages ul {
   list-style: none;
 }
@@ -93,6 +101,10 @@ body {
 .icons li {
   display: inline-block;
   margin: 0 10px;
+}
+
+.contact-form form ul li {
+  list-style: none;
 }
 
 .skills .Languages ul li {
@@ -236,7 +248,6 @@ body {
   transition: all 1s linear;
 }
 
-
 .btn:enabled {
   cursor: pointe;
   background: #7d73fc;
@@ -275,6 +286,7 @@ body {
   text-align: center;
   color: #9390ff;
 }
+
 .contact-form p:first-of-type {
   display: flex;
   justify-content: center;
@@ -299,8 +311,6 @@ body {
   text-align: center;
   color: #ebebff;
 }
-
-
 
 .contact-form form ul li input {
   width: 327px;
@@ -335,15 +345,6 @@ body {
   margin-bottom: 40px;
 }
 
-.contact-form form ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-
 .contact-form form ul li textarea::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -353,15 +354,12 @@ body {
   color: #81818c;
   padding: 12px 12px;
 }
-.contact-form form ul li {
-  list-style: none;
-}
 
 @media (max-width: 767px) {
   .desktop-v {
     display: none;
   }
-  
+
   .contact .work-desk {
     display: none;
   }
@@ -371,40 +369,40 @@ body {
   }
 }
 
-
 @media (min-width: 768px) {
   body {
-  background-color: #191765;
-  background-image: url(./images/header@2x.png);
-  background-repeat: no-repeat;
-  background-position-y: 50px;
-  background-size: 184px;
-}
+    background-color: #191765;
+    background-image: url(./images/header@2x.png);
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-size: 184px;
+  }
 
-.mobile-v{
-  display: none;
-}
-.nav-bar .desktop-h {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  gap: 8px;
-}
+  .mobile-v {
+    display: none;
+  }
 
-.desktop-h .desk-header {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-}
+  .nav-bar .desktop-h {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 8px;
+  }
 
-.nav-bar .desktop-h .h {
-  margin: 0 10px;
-}
+  .desktop-h .desk-header {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
 
-.nav-bar .desktop-h a {
-  text-decoration: none;
-  color: #fff;
-}
+  .nav-bar .desktop-h .h {
+    margin: 0 10px;
+  }
+
+  .nav-bar .desktop-h a {
+    text-decoration: none;
+    color: #fff;
+  }
 
   .profile {
     display: flex;
@@ -481,7 +479,6 @@ body {
     margin: 10px;
   }
 
-
   .my-works .projects p {
     color: #dcdce8;
     font-size: 16px;
@@ -499,46 +496,45 @@ body {
   }
 
   .contact-form form ul li input {
-  width: 684px;
-  height: 48px;
-  margin-bottom: 24px;
-}
-.contact-form form ul li textarea {
-  width: 684px;
-  height: 148px;
-  margin-bottom: 40px;
-}
-#button {
-  display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px;
-gap: 10px;
-width: 160px;
-height: 48px;
-background: #9390FF;
-}
+    width: 684px;
+    height: 48px;
+    margin-bottom: 24px;
+  }
 
-.media-email {
-  display: flex;
-  align-items: center;
-}
+  .contact-form form ul li textarea {
+    width: 684px;
+    height: 148px;
+    margin-bottom: 40px;
+  }
 
-.contact-form p:first-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #f5f5ff;
-  width: 684px;
-  height: 105px;
-}
-}
+  #button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 160px;
+    height: 48px;
+    background: #9390ff;
+  }
 
-  
+  .media-email {
+    display: flex;
+    align-items: center;
+  }
 
+  .contact-form p:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #f5f5ff;
+    width: 684px;
+    height: 105px;
+  }
+}
