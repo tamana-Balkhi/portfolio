@@ -122,12 +122,13 @@ body {
 }
 
 .icons {
-  list-style: none;
+  list-style: none
 }
 
 .my-works .projects img {
   object-fit: contain;
 }
+
 
 @keyframes icon-rotation {
   from { transform: rotate(0deg); }
@@ -367,10 +368,6 @@ body {
   }
 
   .contact .h2-desktop {
-    display: none;
-  }
-
-  hr {
     display: none;
   }
 
