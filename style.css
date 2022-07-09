@@ -18,6 +18,15 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
+  animation-name: move-to-the-right;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+@keyframes move-to-the-right {
+  to {
+    margin-left: 200px;
+  }
 }
 
 .nav-bar img {
