@@ -39,7 +39,7 @@ git clone https://github.com/tamana-Balkhi/Portfolio-Microverse.git
 
 Set up folder as:
 
-1. /PORTFOLIO-MICROVERSE -.github/workflows - linters.yml
+1. /portfolio -.github/workflows - linters.yml
    - images
    - .hintrc
    - .stylelintrc.json

@@ -18,6 +18,15 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
+  animation-name: move-to-the-right;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+@keyframes move-to-the-right {
+  to {
+    margin-left: 200px;
+  }
 }
 
 .nav-bar img {
@@ -164,6 +173,17 @@ body {
   gap: 15px;
 }
 
+@keyframes icon-rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.icons li a img:hover {
+  animation-name: icon-rotation;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
 .contact .hidden {
   visibility: hidden;
 }
@@ -194,6 +214,15 @@ body {
   background-position: right;
   background-position-y: 200px;
 }
+
+.prj-1 img {
+  transition:transform 2s ease-in;
+}
+
+.prj-1 img:hover {
+  transform: scale(2);
+}
+
 
 .prj-2 {
   background-image: url(./images/Ellipse21@2x.png);
