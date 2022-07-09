@@ -122,13 +122,12 @@ body {
 }
 
 .icons {
-  list-style: none
+  list-style: none;
 }
 
 .my-works .projects img {
   object-fit: contain;
 }
-
 
 @keyframes icon-rotation {
   from { transform: rotate(0deg); }
