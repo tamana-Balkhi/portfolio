@@ -125,9 +125,13 @@ body {
   list-style: none;
 }
 
+.my-works .projects img {
+  object-fit: contain;
+}
+
 @keyframes icon-rotation {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .icons li a img:hover {
@@ -212,10 +216,6 @@ body {
   font-weight: 400;
   line-height: 28px;
   margin: 60px 0;
-}
-
-.my-works .projects img {
-  object-fit: contain;
 }
 
 .my-works .projects ul {
