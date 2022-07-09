@@ -16,45 +16,58 @@
 
 <body>
   <header>
-    <nav class="nav-bar">
+    <nav class=" mobile-v nav-bar">
       <h2>tamana balkhi</h2>
       <img src="./images/hamburger.png" alt="image" />
     </nav>
+    <nav class="desktop-v nav-bar">
+      <h2 class="desk-header">tamana Balkhi</h2>
+      <ul class="desktop-h">
+        <li class="h"><a href="#profile">Portoflio</a></li>
+        <li class="h"><a href="#about">About</a></li>
+        <li class="h"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <section id="profile">
-    <h1>Taman balkhi</h1>
-    <h2>Software Developer</h2>
-    <p>
-      I can help you build a product , feature or website Look through some of
-      my work and experience! If you like what you see and have a project you
-      need coded, don not hestiate to contact me.
-    </p>
+  <section class="portfolio" id="profile">
+    <div class="portfolio-desktop profile">
+      <h1>Tamana Balkhi</h1>
+      <h2>Software Developer</h2>
+    </div>
   </section>
-  <div class="skills" id="about">
-    <div class="languages">
-      <ul>
-        <li class="list">Language</li>
-        <li>Javascript</li>
-        <li>Ruby</li>
-        <li>Html</li>
-        <li>Css</li>
-      </ul>
-      <ul>
-        <li class="list">Frameworks</li>
-        <li>Bootstrap</li>
-        <li>Ruby on Rail</li>
-        <li>RSPec</li>
-        <li>CapyBara</li>
-        <li>Selenium</li>
-      </ul>
-      <ul>
-        <li class="list">Skills</li>
-        <li>Codekit</li>
-        <li>Github</li>
-        <li>Codepen</li>
-        <li>Gitlab</li>
-        <li>Terminal</li>
-      </ul>
+
+  <div class="skills">
+    <div class="Languages">
+      <p>
+        I can help you build a product , feature or website Look through some
+        of my work and experience! If you like what you see and have a project
+        you need coded, don’t hestiate to contact me.
+      </p>
+      <div class="skills-ul">
+        <ul>
+          <li class="list">Language</li>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Html</li>
+          <li>Css</li>
+        </ul>
+        <ul>
+          <li class="list">Frameworks</li>
+          <li>Bootstrap</li>
+          <li>Ruby on Rail</li>
+          <li>RSPec</li>
+          <li>CapyBara</li>
+          <li>Selenium</li>
+        </ul>
+        <ul>
+          <li class="list">Skills</li>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -62,16 +75,19 @@
     <div class="hidden">
       <p>work</p>
     </div>
-    <div>
+    <div class="work-desk work">
+      <img src="./images/down-arrow.png" alt="" /> <span>work</span>
+    </div>
+    <div class="contact-list">
       <ul class="icons">
         <li>
-          <a href="#">
+          <a href="https://twitter.com/TAMANA1377">
             <img src="./images/github.png" alt="image" />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="./images/Vector.png" alt="image" />
+          <a href="https://www.linkedin.com/in/tamana-balkhi-1212171b6/">
+            <img src="./images/linkedin1.png" alt="image" />
           </a>
         </li>
         <li>
@@ -80,7 +96,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://twitter.com/TAMANA1377">
             <img src="./images/twitter.png" alt="image" />
           </a>
         </li>
@@ -90,119 +106,135 @@
           </a>
         </li>
       </ul>
-      <div class="work">
+      <div class="work-mobile work">
         <img src="./images/down-arrow.png" alt="" /> <span>work</span>
       </div>
+    </div>
+    <div class="work work-desk">
+      <img src="./images/down-arrow.png" alt="" /> <span>work</span>
     </div>
     <div class="hidden">
       <p>work</p>
     </div>
   </div>
-  <section class="recent-projects">
-    <div class="recent-prj-container">
-      <div class="my-prj">
+
+  <section class="my-recent-works" id="about">
+    <div class="prjs">
+      <div class="my-works">
         <h2>MY RECENT WORK</h2>
-        <div class="prjs">
-          <div>
-            <img src="./images/ImgPlaceholder.png" alt="image" />
-            <h3 class="title">Multy-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts
-              or sign-ups required. has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer took a
-              standard dummy text.
-            </p>
-            <ul>
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button type="button" class="btn">See Project</button>
+        <div class="line"></div>
+        <div class="projects">
+          <div class="prj-card">
+            <div class="my-work-img1">
+              <img src="./images/ImgPlaceholder.png" alt="image" />
+            </div>
+            <div class="prj-text">
+              <h3 class="title">Multy-Post Stories</h3>
+              <p class="description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+              <ul class="prog-langs">
+                <li class="li-no-border">css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="btn">See Project</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="prj-1">
-      <div class="my-prj">
-        <div class="prjs">
-          <div>
-            <img src="./images/ImgPlaceholder.png" alt="image" />
-            <h3 class="title">Multy-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts
-              or sign-ups required. has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer took a
-              standard dummy text.
-            </p>
-            <ul>
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button type="button" class="btn">See Project</button>
+      <div class="work-1 my-works">
+        <div class="projects">
+          <div class="prj1-card prj-card">
+            <div class="my-work-img1">
+              <img src="./images/ImgPlaceholder.png" alt="image" />
+            </div>
+            <div class="text">
+              <h3 class="title">Multy-Post Stories</h3>
+              <p class="description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+              <ul class="prog-langs">
+                <li class="li-no-border">css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="btn">See Project</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="prj-2">
-      <div class="my-prj">
-        <div class="prjs">
-          <div>
-            <img src="./images/ImgPlaceholder.png" alt="image" />
-            <h3 class="title">Multy-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts
-              or sign-ups required. has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer took a
-              standard dummy text.
-            </p>
-            <ul>
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button type="button" class="btn">See Project</button>
+      <div class="work-2 my-works">
+        <div class="projects">
+          <div class="prj-card prj2-card">
+            <div class="my-work-img1">
+              <img src="./images/ImgPlaceholder.png" alt="image" />
+            </div>
+            <div class="text">
+              <h3 class="title">Multy-Post Stories</h3>
+              <p class="description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+              <ul class="prog-langs">
+                <li class="li-no-border">css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="btn">See Project</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="prj-3">
-      <div class="my-prj">
-        <div class="prjs">
-          <div>
-            <img src="./images/ImgPlaceholder.png" alt="image" />
-            <h3 class="title">Multy-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts
-              or sign-ups required. has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer took a
-              standard dummy text.
-            </p>
-            <ul>
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button type="button" class="btn">See Project</button>
+      <div class="work-3 my-works">
+        <div class="projects">
+          <div class="prj3-card prj-card">
+            <div class="my-work-img1">
+              <img src="./images/ImgPlaceholder.png" alt="image" />
+            </div>
+            <div class="text">
+              <h3 class="title">Multy-Post Stories</h3>
+              <p class="description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+              <ul class="prog-langs">
+                <li class="li-no-border">css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="btn">See Project</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <article class="about_p">
-    <h2 class="about">About myself</h2>
-    <p>Hello my name is tamana, l am a software developer wich is trying to bests and make strong my skills in coding
-      and
-      learng new subjects and new techngolies .</p>
-  </article>
-  <div class="contact-form">
+
+  <div class="contact-form" id="contact">
     <h2>CONTACT US</h2>
     <p>If you have an application you are interested in developing, a feature that you need built or a project that
       needs coding. I’d love to help with it </p>
@@ -221,18 +253,21 @@
             required></textarea>
         </li>
         <li>
-          <button class="btn" name="submit" value="submit" type="submit">Submit</button>
+          <button class="btn" name="submit" value="submit" type="submit" id="button">Submit</button>
         </li>
       </ul>
     </form>
+  </div>
+  <hr>
+  <div class="media-email">
     <ul class="icons">
       <li>
-        <a href="#">
+        <a href="https://github.com/tamana-Balkhi">
           <img src="./images/github.png" alt="image" />
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/tamana-balkhi-1212171b6/">
           <img src="./images/Vector.png" alt="image" />
         </a>
       </li>
@@ -242,7 +277,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://twitter.com/TAMANA1377">
           <img src="./images/twitter.png" alt="image" />
         </a>
       </li>

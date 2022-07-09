@@ -25,7 +25,7 @@ dont have demo
 
 Step 1: Type the following command into a git shell
 
-git clone https://github.com/tamana-Balkhi/Portfolio-Microverse.git
+git clone https://github.com/tamana-Balkhi/portfolio.git
 
 
 
