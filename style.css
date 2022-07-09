@@ -16,7 +16,7 @@ body {
 
 .nav-bar h2 {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -24,31 +24,83 @@ body {
   height: 30px;
 }
 
-.profile {
+#profile {
   width: 75%;
   margin: auto;
   text-align: center;
+  border-bottom: 1px grey solid;
 }
 
-.profile h1 {
+.my-prj h2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 30px;
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.contact-form h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9390ff;
+}
+
+#profile h1 {
   color: #7d73fc;
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 45px;
 }
 
-.profile h2 {
+#profile h2 {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
   margin-top: -40px;
 }
 
-.skills p {
-  color: #c8c8d4;
+.my-prj .prjs p {
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 60px 0;
+}
+
+.contact-form p:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  width: 327px;
+  height: 105px;
+}
+
+.contact-form p:last-of-type {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+  color: #ebebff;
+}
+
+#profile p {
+  color: #c8c8d4;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .skills {
@@ -60,24 +112,13 @@ body {
   background-position-y: 10px;
 }
 
-.skills .Languages {
+.skills .languages {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 75%;
   margin: 0 auto;
-}
-
-.skills .Languages .skills-ul {
-  display: flex;
-  justify-content: space-between;
   gap: 50px;
   flex-wrap: wrap;
-  border-top: 1px grey solid;
   border-bottom: 1px grey solid;
-  margin: 20px 0;
-  padding: 20px 0;
-  width: 100%;
 }
 
 .contact-form form ul {
@@ -88,26 +129,21 @@ body {
   padding: 0;
 }
 
-.skills .Languages ul {
+.skills .languages ul {
   list-style: none;
 }
 
-.skills .Languages ul .list {
+.skills .languages ul .list {
   color: #9490ff;
   font-size: 12px;
   font-weight: 500;
-}
-
-.icons li {
-  display: inline-block;
-  margin: 0 3px;
 }
 
 .contact-form form ul li {
   list-style: none;
 }
 
-.skills .Languages ul li {
+.skills .languages ul li {
   color: #f5f5ff;
   font-size: 15px;
   line-height: 35px;
@@ -122,12 +158,19 @@ body {
 }
 
 .icons {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  gap: 15px;
 }
 
 @keyframes icon-rotation {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .icons li a img:hover {
@@ -147,12 +190,12 @@ body {
   color: #a2a3ae;
 }
 
-.my-recent-works {
+.recent-projects {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
-.prjs {
+.recent-prj-container {
   background-image: url(./images/Ellipse\ 19@2x.png);
   background-repeat: no-repeat;
   background-size: 300px;
@@ -165,6 +208,14 @@ body {
   background-size: 150px;
   background-position: right;
   background-position-y: 200px;
+}
+
+.prj-1 img {
+  transition: transform 2s ease-in;
+}
+
+.prj-1 img:hover {
+  transform: scale(2);
 }
 
 .prj-2 {
@@ -182,7 +233,7 @@ body {
   background-position: right;
 }
 
-.my-works {
+.my-prj {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,15 +242,7 @@ body {
   margin: 0 auto;
 }
 
-.my-works h2 {
-  border-bottom: 1px solid grey;
-  padding-bottom: 30px;
-  color: #9490ff;
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.my-works .projects h3 {
+.my-prj .prjs h3 {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
@@ -218,25 +261,20 @@ body {
   object-fit: contain;
 }
 
-.my-works .projects ul {
+.my-prj .prjs ul {
   display: flex;
   gap: 10px;
-  margin-left: -50px;
   list-style: none;
   color: #fff;
+  margin: 40px 0;
 }
 
-.my-works .projects ul li {
+.my-prj .prjs ul li {
   border-left: 1px grey solid;
   padding-left: 15px;
   font-weight: 500;
   line-height: 20px;
   font-size: 15px;
-}
-
-.my-works .projects ul .li-no-border {
-  border-left: none !important;
-  padding-right: 0 !important;
 }
 
 .btn {
@@ -247,7 +285,6 @@ body {
   font-weight: 500;
   margin-bottom: 40px;
   border: none;
-  cursor: pointer;
 }
 
 .btn:enabled {
@@ -269,49 +306,22 @@ body {
   color: #c8c8d4;
 }
 
+.about_p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #c8c8d4;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 100px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 24px;
   margin-right: 24px;
-}
-
-.contact-form h2 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #9390ff;
-}
-
-.contact-form p:first-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #f5f5ff;
-  width: 327px;
-  height: 105px;
-}
-
-.media-email p:last-of-type {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
 }
 
 .contact-form form ul li input {
@@ -321,7 +331,7 @@ body {
 }
 
 .contact-form form ul li input:first-of-type::placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -331,7 +341,7 @@ body {
 }
 
 .contact-form form ul li input:last-of-type::placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -348,261 +358,11 @@ body {
 }
 
 .contact-form form ul li textarea::placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #81818c;
   padding: 12px 12px;
-}
-
-@media (max-width: 767px) {
-  .desktop-v {
-    display: none;
-  }
-
-  .contact .work-desk {
-    display: none;
-  }
-
-  .contact .h2-desktop {
-    display: none;
-  }
-
-  hr {
-    display: none;
-  }
-
-  .media-email {
-    margin: 0 80px;
-  }
-
-  .media-email .icons li {
-    display: inline-block;
-    margin: 0 5px;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    background-color: #191765;
-    background-image: url(./images/header@2x.png);
-    background-repeat: no-repeat;
-    background-position-y: 50px;
-    background-size: 184px;
-  }
-
-  .mobile-v {
-    display: none;
-  }
-
-  .nav-bar .desktop-h {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .desktop-h .desk-header {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  .nav-bar .desktop-h .h {
-    margin: 0 10px;
-  }
-
-  .nav-bar .desktop-h a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 45%;
-    margin: auto;
-    text-align: center;
-  }
-
-  .profile p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  .skills .Languages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%;
-    margin: 0 auto;
-  }
-
-  .skills .Languages .skills-ul {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px grey solid;
-    flex-wrap: nowrap;
-    border-bottom: 1px grey solid;
-  }
-
-  .skills {
-    width: 100vw;
-    background-image: url(./images/circle2.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 226px;
-    background-position-y: 120px;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .contact .work-mobile {
-    display: none;
-  }
-
-  .contact .work-desk {
-    display: flex;
-  }
-
-  .prj-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  .prj1-card,
-  .prj3-card {
-    flex-direction: row-reverse;
-  }
-
-  .my-works .projects h3 {
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    margin: 10px;
-  }
-
-  .media-email p {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #ebebff;
-  }
-
-  .my-works .projects p {
-    color: #dcdce8;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    margin: 10px 0;
-  }
-
-  .my-works .projects ul li {
-    border-left: 1px grey solid;
-    padding-left: 15px;
-    font-weight: 500;
-    line-height: 20px;
-    font-size: 15px;
-  }
-
-  .prj-1 img {
-    height: 270px;
-  }
-
-  .prjs img {
-    height: 270px;
-  }
-
-  .prj-2 img {
-    height: 270px;
-  }
-
-  .prj-3 img {
-    height: 270px;
-  }
-
-  .my-works h2 {
-    width: 100%;
-    border-bottom: none;
-    color: #9490ff;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: left !important;
-  }
-
-  .my-recent-works .divider {
-    height: 1px;
-    width: 100%;
-    background-color: grey;
-    margin-bottom: 20px;
-  }
-
-  .contact-form form ul li input {
-    width: 684px;
-    height: 48px;
-    margin-bottom: 24px;
-  }
-
-  .contact-form form ul li textarea {
-    width: 684px;
-    height: 148px;
-    margin-bottom: 40px;
-  }
-
-  .btn {
-    padding: 10px;
-    background-color: #7d73fc;
-    color: #edecff;
-    font-size: 12px;
-    font-weight: 500;
-    margin-top: 20px;
-  }
-
-  #button {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  hr {
-    height: 1px;
-    width: 100%;
-    background: #3a3837;
-    margin-bottom: 20px;
-  }
-
-  .media-email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contact-form p:first-of-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #f5f5ff;
-    width: 684px;
-    height: 105px;
-  }
 }
