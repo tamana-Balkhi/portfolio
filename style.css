@@ -375,12 +375,13 @@ body {
   }
 
   .media-email {
-    margin: 0 80px;
+    margin: 0 auto;
   }
 
   .media-email .icons li {
     display: inline-block;
-    margin: 0 5px;
+    margin-right: 6%;
+    margin-left: 6%;
   }
 }
 
@@ -545,7 +546,7 @@ body {
     text-align: left !important;
   }
 
-  .my-recent-works .divider {
+  .my-recent-works .line {
     height: 1px;
     width: 100%;
     background-color: grey;
