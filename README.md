@@ -9,7 +9,8 @@
 
 ## Live Demo
 
-dont have demo
+you can visite my portfolio here:
+https://tamana-balkhi.github.io/
 
 ## Getting Started
 
