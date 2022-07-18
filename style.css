@@ -394,7 +394,6 @@ body {
 
   .media-email .icons li {
     display: inline-block;
-    margin-right: 6%;
     margin-left: 6%;
   }
 }
@@ -557,7 +556,7 @@ body {
     color: #9490ff;
     font-size: 30px;
     font-weight: 700;
-    text-align: left !important;
+    text-align: left;
   }
 
   .my-recent-works .line {
