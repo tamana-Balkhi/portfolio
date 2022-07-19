@@ -439,7 +439,7 @@ body {
   #cancel {
     width: 40px;
   }
-
+  
 .m-List a {
   text-decoration: none;
   color: white;
@@ -448,16 +448,21 @@ body {
 }
 
 .m-List li {
+  list-style: none;
+}
+
+
+
+.m-List li a {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   margin: 15px;
 }
 
-.m-List li img {
-  width: 20px;
-  margin-right: 20px;
-}
+.arrow {
+  height: 15px;
+
 
 /*.hide {
   display: none;
