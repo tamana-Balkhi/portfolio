@@ -4,14 +4,14 @@ const cancel = document.querySelector('#cancel');
 const links = document.querySelector('#Links');
 
 hamburger.addEventListener('click', () => {
-  mobilemenu.classList.add('open-menu');
-  mobilemenu.classList.remove('close-menu');
+  mobilemenu.classList.add('show');
+  mobilemenu.classList.remove('hide');
   mobilemenu.style.display = 'block';
 });
 
 cancel.addEventListener('click', () => {
-  mobilemenu.classList.add('close-menu');
-  modal.classList.remove('open-menu');
+  mobilemenu.classList.add('hide');
+  modal.classList.remove('show');
 });
 
 links.addEventListener('click', () => {
