@@ -380,14 +380,13 @@ body {
     display: none;
   }
 
-  .m-List {
+  /*.m-List {
   list-style: none;
   background-color: #191765;
-  position: absolute;
   left: 0;
   right: 0;
-  height: 100vh;
-  background-image: url(./images/mobilemenu-2@2x.png);
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
 }
 
@@ -397,8 +396,23 @@ body {
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 520px;
-  background-position-x: 300px;
+  background-position-x: 300px;*/
 }
+
+.m-List {
+    top: 0px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: 0.3s;
+    margin: 0;
+    background-image: url("images/mobilemenu-2@2x.png"), url("images/shape1@2x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 62.04px, 100% 432.54px;
+  }
 
 .m-List a {
   text-decoration: none;
