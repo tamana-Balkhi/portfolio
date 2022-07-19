@@ -397,12 +397,11 @@ body {
   background-position: right;
   background-position-y: 520px;
   background-position-x: 300px;*/
-}
+
 
 .m-List {
     top: 0px;
     gap: 12px;
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
