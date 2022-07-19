@@ -386,11 +386,9 @@ body {
 
   .mobile-v {
     display: flex;
-    justify-content: flex-end;
   }
 
   #mobilemenu {
-    /* display: none; */
     position: fixed;
     background-color: #191765;
     top: 0;
@@ -442,6 +440,8 @@ body {
     display: block;
     width: 35px;
     margin-bottom: 30px;
+    margin-right: 4%;
+    margin-top: 20px;
     cursor: pointer;
   }
 
