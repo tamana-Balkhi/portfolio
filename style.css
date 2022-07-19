@@ -398,8 +398,20 @@ body {
   background-position-y: 520px;
   background-position-x: 300px;*/
 
+#hamburger {
+  display: none;
+}
 
-.m-List {
+#logo2 {
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
     top: 0px;
     gap: 12px;
     flex-direction: column;
