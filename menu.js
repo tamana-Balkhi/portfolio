@@ -1,19 +1,14 @@
-const mobilemenu = document.querySelector('#mobilemenu');
-const hamburger = document.querySelector('#hamburger');
-const cancel = document.querySelector('#cancel');
-const links = document.querySelector('#Links');
+let mobileHamburger = document.getElementById('hamburger');
+let closeIcon = document.getElementById('cancel')
+let mobileM = document.querySelector('.hide');
 
-hamburger.addEventListener('click', () => {
-  mobilemenu.classList.add('show');
-  mobilemenu.classList.remove('hide');
-  mobilemenu.style.display = 'block';
-});
+mobileHamburger.addEventListener('click', openMenu);
+closeIcon.addEventListener('click', closeMenu);
 
-cancel.addEventListener('click', () => {
-  mobilemenu.classList.add('hide');
-  modal.classList.remove('show');
-});
+function openMenu() {
+  mobileM.style.display = 'block';
+}
 
-links.addEventListener('click', () => {
-  mobilemenu.style.display = 'none';
-});
+function closeMenu() {
+  mobileM.style.display = 'none';
+}
