@@ -16,9 +16,25 @@
 
 <body>
   <header>
-    <nav class=" mobile-v nav-bar">
-      <h2>tamana balkhi</h2>
-      <img src="./images/hamburger.png" alt="image" />
+    <nav class=" mobile-header">
+      <div class="mobile-v nav-bar">
+        <h2 id="logo2">Tamana Balkhi</h2>
+        <div>
+          <img src="./images/hamburger.png" id="hamburger" alt="hamburger icon" />
+        </div>
+      </div>
+      <div id="mobilemenu" class="hide m-List">
+        <div class="img-container">
+          <img src="./images/cancel.png" class="hide cancel" id="cancel" alt="" />
+        </div>
+        <ul class="menu">
+          <li id="m-h1" class="Links link-p1"><a href="#profile">Portfolio<img src="./images/arr1.png" alt=""
+                class="larrow"></a></li>
+          <li id="m-h2" class="Links"><a href="#about">About<img src="./images/arr1.png" alt="" class="larrow"></a></li>
+          <li id="m-h3" class="Links"><a href="#contact">Contact<img src="./images/arr1.png" alt="" class="larrow"></a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <nav class="desktop-v nav-bar">
       <h2 class="desk-header">tamana Balkhi</h2>
@@ -289,7 +305,7 @@
     </ul>
     <p>tamana.balkhi1377@gmail.com</p>
   </div>
-
+  <script src="menu.js"></script>
 </body>
 
 </html>
