@@ -2,6 +2,10 @@ const mobileHamburger = document.getElementById('hamburger');
 const closeIcon = document.getElementById('cancel');
 const mobileM = document.querySelector('.hide');
 const mobilemenu = document.querySelector('#mobilemenu');
+const btnId1 = document.getElementById('btnId1');
+const btnId2 = document.getElementById('btnId2');
+const btnId3 = document.getElementById('btnId3');
+const btnId4 = document.getElementById('btnId4');
 
 function openMenu() {
   mobileM.style.display = 'block';
@@ -21,83 +25,74 @@ mobilemenu.addEventListener('click', () => {
 
 
 
-const workArr = [
+const popupwindowArray = [
   {
     id: '0',
-    title: 'Multy Post - Stories',
-    image: 'images/SnapshootPortfolio.png',
+    title: 'Multy Post - Stories 1',
+    image: 'images/SnapshootPortfolio.svg',
     paragraph:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    ulList1: 'html',
-    ulList2: 'Ruby on rail',
-    ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    tech1: 'html',
+    tech2: 'Ruby on rail',
+    tech3: 'css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
   },
 
   {
     id: '1',
-    title: 'Second Multy Post - Stories ',
-    image: 'images/SnapshootPortfolio.png',
+    title: ' Multy Post - Stories 1',
+    image: 'images/SnapshootPortfolio.svg',
     paragraph:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    ulList1: 'html',
-    ulList2: 'Ruby on rail',
-    ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    tech1: 'html',
+    tech2: 'Ruby on rail',
+    tech3: 'css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
   },
 
   {
     id: '2',
-    title: 'Third Multy Post - Stories',
-    image: 'images/SnapshootPortfolio.png',
+    title: ' Multy Post - Stories 2',
+    image: 'images/SnapshootPortfolio.svg',
     paragraph:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    ulList1: 'html',
-    ulList2: 'Ruby on rail',
-    ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    tech1: 'html',
+    tech2: 'Ruby on rail',
+    tech3: 'css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
   },
 
   {
     id: '3',
-    title: 'Fourth Multy Post - Stories',
-    image: 'images/SnapshootPortfolio.png',
+    title: ' Multy Post - Stories 3',
+    image: 'images/SnapshootPortfolio.svg',
     paragraph:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    ulList1: 'html',
-    ulList2: 'Ruby on rail',
-    ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    tech1: 'html',
+    tech2: 'Ruby on rail',
+    tech3: 'css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
   },
 ];
 
 let i = 0;
 
-[closeX, menu, hamburger].forEach((elements) => {
-  elements.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    closeX.classList.toggle('hidden');
-    hamburger.classList.toggle('hidden');
-    logoMobile.classList.toggle('noVisibility');
-  });
-});
-
 function display() {
-  const popScreen = document.querySelector('body');
-  const modalSection = document.createElement('section');
-  const sectionDivContainer = document.createElement('div');
+  const popbody = document.querySelector('body');
+  const windowSection = document.createElement('section');
+  const Div_Container = document.createElement('div');
   const sectionDiv = document.createElement('div');
-  const sectionHeader = document.createElement('header');
-  const divTitle = document.createElement('h1');
-  const divClosImg = document.createElement('img');
+  const windowHeader = document.createElement('header');
+  const windowTitle = document.createElement('h1');
+  const ClosImg = document.createElement('img');
   const divImgContainer = document.createElement('div');
-  const divImg = document.createElement('img');
-  const divParagraph = document.createElement('p');
-  const ulLi1st = document.createElement('ul');
+  const windowImg = document.createElement('img');
+  const popupParagraph = document.createElement('p');
+  const ul = document.createElement('ul');
   const ulLi1 = document.createElement('li');
   const ulLi2 = document.createElement('li');
   const ulLi3 = document.createElement('li');
@@ -105,61 +100,61 @@ function display() {
   const popBtn1 = document.createElement('button');
   const popBtn2 = document.createElement('button');
 
-  popScreen.className = 'popbody';
-  modalSection.className = 'popupsection';
-  sectionDivContainer.className = 'popDivContainer';
-  sectionDiv.className = 'popDiv';
-  sectionHeader.className = 'popHeader';
-  divTitle.className = 'popdivTitle';
-  divClosImg.className = 'closeX';
-  divImgContainer.className = 'divImgContain';
-  divImg.className = 'popdivImg';
-  divParagraph.className = 'divParagraphagraph';
-  ulLi1st.className = 'ulMain';
-  ulLi1.className = 'ulItems1';
-  ulLi2.className = 'ulItems2';
-  ulLi3.className = 'ulItems3';
-  divButton.className = 'btnDiv';
+  popbody.className = 'popbody';
+  windowSection.className = 'popupsection';
+  Div_Container.className = 'popwindow-Container';
+  sectionDiv.className = 'popup-div';
+  windowHeader.className = 'popup-H';
+  windowTitle.className = 'windowTitle';
+  ClosImg.className = 'cancel';
+  divImgContainer.className = 'div-Img-Container';
+  windowImg.className = 'window-div-Img ';
+  popupParagraph.className = 'divP';
+  ul.className = 'listMain';
+  ulLi1.className = 'list1';
+  ulLi2.className = 'list2';
+  ulLi3.className = 'list3';
+  divButton.className = 'button-div';
   popBtn1.className = 'button1';
   popBtn2.className = 'button2';
 
-  popScreen.appendChild(modalSection);
-  modalSection.appendChild(sectionDivContainer);
-  sectionDivContainer.appendChild(sectionDiv);
-  sectionDiv.appendChild(sectionHeader);
-  sectionHeader.appendChild(divTitle);
-  sectionHeader.appendChild(divClosImg);
+  popbody.appendChild(windowSection);
+  windowSection.appendChild(Div_Container);
+  Div_Container.appendChild(sectionDiv);
+  sectionDiv.appendChild(windowHeader);
+  windowHeader.appendChild(windowTitle);
+  windowHeader.appendChild(ClosImg);
   sectionDiv.appendChild(divImgContainer);
-  divImgContainer.appendChild(divImg);
-  sectionDiv.appendChild(divParagraph);
-  sectionDiv.appendChild(ulLi1st);
-  ulLi1st.appendChild(ulLi1);
-  ulLi1st.appendChild(ulLi2);
-  ulLi1st.appendChild(ulLi3);
+  divImgContainer.appendChild(windowImg);
+  sectionDiv.appendChild(popupParagraph);
+  sectionDiv.appendChild(ul);
+  ul.appendChild(ulLi1);
+  ul.appendChild(ulLi2);
+  ul.appendChild(ulLi3);
   sectionDiv.appendChild(divButton);
   divButton.appendChild(popBtn1);
   divButton.appendChild(popBtn2);
 
-  document.querySelector('.popdivTitle').textContent = workArr[i].title;
-  document.querySelector('.closeX').src = 'images/close.png';
-  document.querySelector('.popdivImg').src = workArr[i].image;
-  document.querySelector('.divParagraphagraph').textContent = workArr[i].paragraph;
-  document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
-  document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
-  document.querySelector('.ulItems3').textContent = workArr[i].ulList3;
+  document.querySelector('.windowTitle').textContent = popupwindowArray[i].title;
+  document.querySelector('.cancel').src = 'images/cancel.png';
+  document.querySelector('.window-div-Img').src = popupwindowArray[i].image;
+  document.querySelector('.divP').textContent = popupwindowArray[i].paragraph;
+  document.querySelector('.list1').textContent = popupwindowArray[i].tech1;
+  document.querySelector('.list2').textContent = popupwindowArray[i].tech2;
+  document.querySelector('.list3').textContent = popupwindowArray[i].tech3;
   document.querySelector('.button1').textContent = 'See Live';
   document.querySelector('.button2').textContent = 'See Source';
 
-  divClosImg.addEventListener('click', () => {
-    modalSection.remove();
+  ClosImg.addEventListener('click', () => {
+    windowSection.remove();
   });
 
   popBtn1.addEventListener('click', () => {
-    window.open(workArr[i].btnLive);
+    window.open(popupwindowArray[i].btnLive);
   });
 
   popBtn2.addEventListener('click', () => {
-    window.open(workArr[i].btnSource);
+    window.open(popupwindowArray[i].btnSource);
   });
 }
 
