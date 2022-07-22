@@ -1,9 +1,14 @@
 body {
   background-color: #191765;
-  background-image: url(./images/Ellipse\ 18@2x.png);
-  background-repeat: no-repeat;
-  background-position-y: 50px;
-  background-size: 100px;
+  background-image: url("./images/firstbg.svg"), url("./images/secondbg.svg"), url("./images/thirdbg.svg"), url("./images/4rthbg.svg"), url(./images/Ellipse\ 18@2x.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 380px 940px, 220px 1100px, 600px 280px, 220px 1000px 275px 275px;
+  background-position:
+    left -40px top 1270px,
+    right -70px top 1820px,
+    left -0 top 3080px,
+    right -10px top 3490px,
+    top 40px left -47px;
 }
 
 .nav-bar {
@@ -174,6 +179,7 @@ body {
   grid-template-columns: 1fr;
 }
 
+/*
 .prjs {
   background-image: url(./images/Ellipse\ 19@2x.png);
   background-repeat: no-repeat;
@@ -203,7 +209,7 @@ body {
   background-position-y: 150px;
   background-position: right;
 }
-
+*/
 .my-works {
   display: flex;
   justify-content: center;
@@ -213,8 +219,7 @@ body {
   margin: 0 auto;
 }
 
-.my-works h2 {
-  border-bottom: 1px solid grey;
+.my-recent-works h2 {
   padding-bottom: 30px;
   color: #9490ff;
   font-size: 40px;
@@ -374,6 +379,133 @@ body {
   color: #81818c;
   padding: 12px 12px;
 }
+
+/* popup -------------------------------------------------------------------- */
+
+.popupsection {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+}
+
+.popwindow-Container {
+  width: 80%;
+  max-height: 96%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 1);
+  color: white;
+}
+
+.popup-div {
+  width: 90%;
+  margin: auto;
+}
+
+.popup-H {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cancel {
+  height: 15px;
+  width: 15px;
+}
+
+.div-Img-Container {
+  width: 100%;
+  object-fit: contain;
+}
+
+.window-div-Img {
+  width: 100%;
+  height: 181px;
+}
+
+.divP {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.listMain {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.list1,
+.list2,
+.list3 {
+  border-left: 2px solid grey;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem;
+}
+
+.list3 {
+  border-right: 2px solid grey;
+}
+
+.button-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.button1 {
+  background-color: #7d73fc;
+  background-image: url(./images/liveIcon.svg);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-position-x: 110px;
+  height: 50px;
+  width: 150px;
+  padding: 12px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  padding-left: 2px;
+  border: none;
+  filter: contrast(2);
+}
+
+.button2 {
+  background-color: #7d73fc;
+  background-image: url(./images/github.png);
+  width: 170px;
+  background-repeat: no-repeat;
+  background-position-x: 130px;
+  background-position-y: center;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  padding: 12px;
+  padding-left: 2px;
+  border: none;
+  filter: contrast(2);
+  color: white;
+  height: 50px;
+}
+
+/* popup ----------------------------------------------------------------------- */
 
 @media (max-width: 767px) {
   .desktop-v {
@@ -577,8 +709,13 @@ body {
     font-weight: 400;
   }
 
-  .prj1-card,
+  /* .prj1-card,
   .prj3-card {
+    flex-direction: row-reverse;
+  } */
+
+  #prj2-card,
+  #prj4-card {
     flex-direction: row-reverse;
   }
 
@@ -631,7 +768,7 @@ body {
     height: 270px;
   }
 
-  .my-works h2 {
+  .my-recent-works h2 {
     width: 100%;
     border-bottom: none;
     color: #9490ff;
@@ -699,5 +836,32 @@ body {
     color: #f5f5ff;
     width: 684px;
     height: 105px;
+  }
+
+  .popwindow-Container {
+    height: min-content;
+  }
+
+  .popup-H {
+    max-width: 100%;
+  }
+
+  .div-Img-Container {
+    text-align: center;
+  }
+
+  .window-div-Img {
+    width: 80%;
+    height: 350px;
+  }
+
+  .divP {
+    width: 65%;
+    margin: auto;
+  }
+
+  .cancel {
+    width: 30px;
+    height: 30px;
   }
 }
