@@ -3,7 +3,6 @@ const closeIcon = document.getElementById('cancel');
 const mobileM = document.querySelector('.hide');
 const mobilemenu = document.querySelector('#mobilemenu');
 
-
 function openMenu() {
   mobileM.style.display = 'block';
 }
@@ -30,7 +29,7 @@ const popupwindowArray = [
     image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
     title: 'Multy Post - Stories 1',
-    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     tech1: 'Html',
@@ -48,7 +47,7 @@ const popupwindowArray = [
     image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
     title: 'Multy Post - Stories 2',
-    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     tech1: 'Html',
@@ -66,7 +65,7 @@ const popupwindowArray = [
     image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
     title: 'Multy Post - Stories 3',
-    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     tech1: 'Html',
@@ -84,7 +83,7 @@ const popupwindowArray = [
     image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
     title: 'Multy Post - Stories 4',
-    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     tech1: 'Html',
@@ -131,7 +130,7 @@ const displayC = () => {
 };
 displayC();
 
-//popup window //
+// popup window //
 const btnId1 = document.getElementById('btnId1');
 const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
@@ -142,7 +141,7 @@ let i = 0;
 function display() {
   const popbody = document.querySelector('body');
   const windowSection = document.createElement('section');
-  const Div_Container = document.createElement('div');
+  const DivContainer = document.createElement('div');
   const sectionDiv = document.createElement('div');
   const windowHeader = document.createElement('header');
   const windowTitle = document.createElement('h1');
@@ -160,11 +159,11 @@ function display() {
 
   popbody.className = 'popbody';
   windowSection.className = 'popupsection';
-  Div_Container.className = 'popwindow-Container';
+  DivContainer.className = 'popwindow-Container';
   sectionDiv.className = 'popup-div';
   windowHeader.className = 'popup-H';
   windowTitle.className = 'windowTitle';
-  ClosImg.className = 'cancel';
+  ClosImg.className = 'cancel2';
   divImgContainer.className = 'div-Img-Container';
   windowImg.className = 'window-div-Img ';
   popupParagraph.className = 'divP';
@@ -177,8 +176,8 @@ function display() {
   popBtn2.className = 'button2';
 
   popbody.appendChild(windowSection);
-  windowSection.appendChild(Div_Container);
-  Div_Container.appendChild(sectionDiv);
+  windowSection.appendChild(DivContainer);
+  DivContainer.appendChild(sectionDiv);
   sectionDiv.appendChild(windowHeader);
   windowHeader.appendChild(windowTitle);
   windowHeader.appendChild(ClosImg);
@@ -194,7 +193,7 @@ function display() {
   divButton.appendChild(popBtn2);
 
   document.querySelector('.windowTitle').textContent = popupwindowArray[i].title;
-  document.querySelector('.cancel').src = 'images/cancel.png';
+  document.querySelector('.cancel2').src = 'images/cancel.png';
   document.querySelector('.window-div-Img').src = popupwindowArray[i].image;
   document.querySelector('.divP').textContent = popupwindowArray[i].paragraph;
   document.querySelector('.list1').textContent = popupwindowArray[i].tech1;
