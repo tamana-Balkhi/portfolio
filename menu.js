@@ -22,16 +22,22 @@ mobilemenu.addEventListener('click', () => {
 
 const myWorkContainer = document.querySelector('.my-recent-works');
 
-const myCardsContent = [
+const popupwindowArray = [
 
   {
     myCardId: 'prj1-card',
     workImage: './images/ImgPlaceholder.png',
+    image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
+    title: 'Multy Post - Stories 1',
+    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
-    seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
+    tech1: 'Html',
+    tech2: 'Ruby on rails',
+    tech3: 'Css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
     myMbId: 'btnId1',
 
   },
@@ -39,11 +45,17 @@ const myCardsContent = [
   {
     myCardId: 'prj2-card',
     workImage: './images/ImgPlaceholder.png',
+    image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
+    title: 'Multy Post - Stories 2',
+    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
-    seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
+    tech1: 'Html',
+    tech2: 'Ruby on rails',
+    tech3: 'Css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
     myMbId: 'btnId2',
 
   },
@@ -51,11 +63,17 @@ const myCardsContent = [
   {
     myCardId: 'prj3-card',
     workImage: './images/ImgPlaceholder.png',
+    image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
+    title: 'Multy Post - Stories 3',
+    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
-    seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
+    tech1: 'Html',
+    tech2: 'Ruby on rails',
+    tech3: 'Css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
     myMbId: 'btnId3',
 
   },
@@ -63,38 +81,44 @@ const myCardsContent = [
   {
     myCardId: 'prj4-card',
     workImage: './images/ImgPlaceholder.png',
+    image: 'images/SnapshootPortfolio.svg',
     workTitle: 'Multi-Post Stories',
+    title: 'Multy Post - Stories 4',
+    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
-    seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
+    tech1: 'Html',
+    tech2: 'Ruby on rails',
+    tech3: 'Css',
+    btnLive: 'https://tamana-balkhi.github.io/',
+    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
     myMbId: 'btnId4',
 
   },
 
 ];
 
-const dynamiContent = () => {
+const displayC = () => {
   let theCont = '';
 
-  for (let i = 0; i < myCardsContent.length; i += 1) {
+  for (let i = 0; i < popupwindowArray.length; i += 1) {
     const myCardCon = `
      <div class="my-works">
         <div class="projects">
-          <div class="prj-card" id="${myCardsContent[i].myCardId}">
+          <div class="prj-card" id="${popupwindowArray[i].myCardId}">
             <div class="my-work-img1">
-              <img src="${myCardsContent[i].workImage}" alt="image" />
+              <img src="${popupwindowArray[i].workImage}" alt="image" />
             </div>
             <div class="prj-text">
-              <h3 class="title">${myCardsContent[i].workTitle}</h3>
-              <p class="description">${myCardsContent[i].workDescription}</p>
+              <h3 class="title">${popupwindowArray[i].workTitle}</h3>
+              <p class="description">${popupwindowArray[i].workDescription}</p>
               <ul class="prog-langs">
-                <li class="li-no-border">${myCardsContent[i].workTools[0]}</li>
-                <li>${myCardsContent[i].workTools[1]}</li>
-                <li>${myCardsContent[i].workTools[2]}</li>
-                <li>${myCardsContent[i].workTools[3]}</li>
+                <li class="li-no-border">${popupwindowArray[i].workTools[0]}</li>
+                <li>${popupwindowArray[i].workTools[1]}</li>
+                <li>${popupwindowArray[i].workTools[2]}</li>
+                <li>${popupwindowArray[i].workTools[3]}</li>
               </ul>
-              <button type="button" class="btn" id="${myCardsContent[i].myMbId}">See Project</button>
+              <button type="button" class="btn" id="${popupwindowArray[i].myMbId}">See Project</button>
             </div>
           </div>
         </div>
@@ -105,63 +129,13 @@ const dynamiContent = () => {
   }
   myWorkContainer.insertAdjacentHTML('beforeend', theCont);
 };
-dynamiContent();
+displayC();
 
 //popup window //
 const btnId1 = document.getElementById('btnId1');
 const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
 const btnId4 = document.getElementById('btnId4');
-
-const popupwindowArray = [
-  {
-    title: 'Multy Post - Stories 1',
-    image: 'images/SnapshootPortfolio.svg',
-    paragraph:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    tech1: 'Html',
-    tech2: 'Ruby on rails',
-    tech3: 'Css',
-    btnLive: 'https://tamana-balkhi.github.io/',
-    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
-  },
-
-  {
-    title: ' Multy Post - Stories 1',
-    image: 'images/SnapshootPortfolio.svg',
-    paragraph:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    tech1: 'Html',
-    tech2: 'Ruby on rails',
-    tech3: 'Css',
-    btnLive: 'https://tamana-balkhi.github.io/',
-    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
-  },
-
-  {
-
-    title: ' Multy Post - Stories 2',
-    image: 'images/SnapshootPortfolio.svg',
-    paragraph:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    tech1: 'Html',
-    tech2: 'Ruby on rails',
-    tech3: 'Css',
-    btnLive: 'https://tamana-balkhi.github.io/',
-    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
-  },
-
-  {
-    title: ' Multy Post - Stories 3',
-    image: 'images/SnapshootPortfolio.svg',
-    paragraph:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    tech1: 'Html',
-    tech2: 'Ruby on rails',
-    tech3: 'Css',
-    btnLive: 'https://tamana-balkhi.github.io/',
-    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
-  },
-];
 
 let i = 0;
 
