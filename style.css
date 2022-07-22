@@ -1,9 +1,17 @@
 body {
   background-color: #191765;
-  background-image: url(./images/Ellipse\ 18@2x.png);
-  background-repeat: no-repeat;
-  background-position-y: 50px;
-  background-size: 100px;
+  background-image: url("./images/firstbg.svg"), url("./images/secondbg.svg"), url("./images/thirdbg.svg"), url("./images/4rthbg.svg"), url(./images/Ellipse\ 18@2x.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 380px 940px, 220px 1100px, 600px 280px, 220px 1000px 275px 275px
+;
+  background-position:
+    left -40px top 1270px,
+    right -70px top 1820px,
+    left -200px top 3080px,
+    right -10px top 3490px,
+    top 40px left -47px;
+
+
 }
 
 .nav-bar {
@@ -173,7 +181,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 }
-
+/*
 .prjs {
   background-image: url(./images/Ellipse\ 19@2x.png);
   background-repeat: no-repeat;
@@ -203,7 +211,7 @@ body {
   background-position-y: 150px;
   background-position: right;
 }
-
+*/
 .my-works {
   display: flex;
   justify-content: center;
@@ -709,8 +717,13 @@ body {
     font-weight: 400;
   }
 
-  .prj1-card,
+  /*.prj1-card,
   .prj3-card {
+    flex-direction: row-reverse;
+  }*/
+
+  #prj2-card,
+  #prj4-card {
     flex-direction: row-reverse;
   }
 

@@ -2,10 +2,7 @@ const mobileHamburger = document.getElementById('hamburger');
 const closeIcon = document.getElementById('cancel');
 const mobileM = document.querySelector('.hide');
 const mobilemenu = document.querySelector('#mobilemenu');
-const btnId1 = document.getElementById('btnId1');
-const btnId2 = document.getElementById('btnId2');
-const btnId3 = document.getElementById('btnId3');
-const btnId4 = document.getElementById('btnId4');
+
 
 function openMenu() {
   mobileM.style.display = 'block';
@@ -23,55 +20,55 @@ mobilemenu.addEventListener('click', () => {
   mobileHamburger.style.display = 'block';
 });
 
-const myWorkContainer = document.querySelector('.my-work');
+const myWorkContainer = document.querySelector('.my-recent-works');
 
 const myCardsContent = [
 
   {
-    myCardId: 'card-1',
-    workImage: 'images/imageplaceholder.png',
+    myCardId: 'prj1-card',
+    workImage: './images/ImgPlaceholder.png',
     workTitle: 'Multi-Post Stories',
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    myMbId: '1',
+    myMbId: 'btnId1',
 
   },
 
   {
-    myCardId: 'card-2',
-    workImage: 'images/imageplaceholder.png',
+    myCardId: 'prj2-card',
+    workImage: './images/ImgPlaceholder.png',
     workTitle: 'Multi-Post Stories',
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    myMbId: '2',
+    myMbId: 'btnId2',
 
   },
 
   {
-    myCardId: 'card-3',
-    workImage: 'images/imageplaceholder.png',
+    myCardId: 'prj3-card',
+    workImage: './images/ImgPlaceholder.png',
     workTitle: 'Multi-Post Stories',
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    myMbId: '3',
+    myMbId: 'btnId3',
 
   },
 
   {
-    myCardId: 'card-4',
-    workImage: 'images/imageplaceholder.png',
+    myCardId: 'prj4-card',
+    workImage: './images/ImgPlaceholder.png',
     workTitle: 'Multi-Post Stories',
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
     seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    myMbId: '4',
+    myMbId: 'btnId4',
 
   },
 
@@ -81,32 +78,43 @@ const dynamiContent = () => {
   let myVarCont = '';
 
   for (let i = 0; i < myCardsContent.length; i += 1) {
-    const myCardCon = `<div class="cards" id="${myCardsContent[i].myCardId}">
+    const myCardCon = `
+     <div class="my-works">
+        <div class="projects">
+          <div class="prj-card" id="${myCardsContent[i].myCardId}">
+            <div class="my-work-img1">
+              <img src="${myCardsContent[i].workImage}" alt="image" />
+            </div>
+            <div class="prj-text">
+              <h3 class="title">${myCardsContent[i].workTitle}</h3>
+              <p class="description">${myCardsContent[i].workDescription}</p>
+              <ul class="prog-langs">
+                <li class="li-no-border">${myCardsContent[i].workTools[0]}</li>
+                <li>${myCardsContent[i].workTools[1]}</li>
+                <li>${myCardsContent[i].workTools[2]}</li>
+                <li>${myCardsContent[i].workTools[3]}</li>
+              </ul>
+              <button type="button" class="btn" id="${myCardsContent[i].myMbId}">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> `;
 
-       <div class="image-container">
-          <img src="${myCardsContent[i].workImage}" alt="First project visualization" class="my-project-image">
-       </div>
-
-       <div class="my-flex-card">
-          <h2 class="my-work-title">${myCardsContent[i].workTitle}</h2>
-          <p class="my-work-description">${myCardsContent[i].workDescription}</p>
-           <ul class="my-work-tools">
-              <li class="li-css">${myCardsContent[i].workTools[0]}</li>
-              <li>${myCardsContent[i].workTools[1]}</li>
-              <li>${myCardsContent[i].workTools[2]}</li>
-              <li>${myCardsContent[i].workTools[3]}</li>
-           </ul>
-          <button class="visualize-button actv" id="btn${myCardsContent[i].myMbId}"type="button">See Project</button>
-        </div></div>`;
     myVarCont += myCardCon;
   }
   myWorkContainer.insertAdjacentHTML('beforeend', myVarCont);
 };
 dynamiContent();
 
+//popup window //
+const btnId1 = document.getElementById('btnId1');
+const btnId2 = document.getElementById('btnId2');
+const btnId3 = document.getElementById('btnId3');
+const btnId4 = document.getElementById('btnId4');
+
 const popupwindowArray = [
   {
-    id: '0',
     title: 'Multy Post - Stories 1',
     image: 'images/SnapshootPortfolio.svg',
     paragraph:
@@ -119,7 +127,6 @@ const popupwindowArray = [
   },
 
   {
-    id: '1',
     title: ' Multy Post - Stories 1',
     image: 'images/SnapshootPortfolio.svg',
     paragraph:
@@ -132,7 +139,7 @@ const popupwindowArray = [
   },
 
   {
-    id: '2',
+
     title: ' Multy Post - Stories 2',
     image: 'images/SnapshootPortfolio.svg',
     paragraph:
@@ -145,7 +152,6 @@ const popupwindowArray = [
   },
 
   {
-    id: '3',
     title: ' Multy Post - Stories 3',
     image: 'images/SnapshootPortfolio.svg',
     paragraph:
@@ -256,4 +262,3 @@ btnId4.addEventListener('click', () => {
   i = 3;
   display();
 });
-
