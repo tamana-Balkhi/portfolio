@@ -2,16 +2,13 @@ body {
   background-color: #191765;
   background-image: url("./images/firstbg.svg"), url("./images/secondbg.svg"), url("./images/thirdbg.svg"), url("./images/4rthbg.svg"), url(./images/Ellipse\ 18@2x.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 380px 940px, 220px 1100px, 600px 280px, 220px 1000px 275px 275px
-;
+  background-size: 380px 940px, 220px 1100px, 600px 280px, 220px 1000px 275px 275px;
   background-position:
     left -40px top 1270px,
     right -70px top 1820px,
     left -200px top 3080px,
     right -10px top 3490px,
     top 40px left -47px;
-
-
 }
 
 .nav-bar {
@@ -181,6 +178,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 }
+
 /*
 .prjs {
   background-image: url(./images/Ellipse\ 19@2x.png);
@@ -221,8 +219,7 @@ body {
   margin: 0 auto;
 }
 
-.my-works h2 {
-  border-bottom: 1px solid grey;
+.my-recent-works h2 {
   padding-bottom: 30px;
   color: #9490ff;
   font-size: 40px;
@@ -383,7 +380,7 @@ body {
   padding: 12px 12px;
 }
 
-/* popup --------------------------------------------------------------------*/
+/* popup -------------------------------------------------------------------- */
 .popupsection {
   width: 100%;
   height: 100%;
@@ -396,7 +393,7 @@ body {
 
 .popwindow-Container {
   width: 80%;
-  height:96%;
+  height: 96%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -406,13 +403,13 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background:rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 1);
   color: white;
 }
 
-.popup-div{
+.popup-div {
   width: 90%;
   margin: auto;
 }
@@ -446,7 +443,7 @@ body {
 .divP {
   text-align: center;
   font-weight: 400;
-  font-size:16px;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -470,7 +467,7 @@ body {
   border-right: 2px solid grey;
 }
 
-.button-div{
+.button-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -513,7 +510,7 @@ body {
 }
 
 
-/* popup -----------------------------------------------------------------------*/
+/* popup ----------------------------------------------------------------------- */
 
 @media (max-width: 767px) {
   .desktop-v {
@@ -717,10 +714,10 @@ body {
     font-weight: 400;
   }
 
-  /*.prj1-card,
+  /* .prj1-card,
   .prj3-card {
     flex-direction: row-reverse;
-  }*/
+  } */
 
   #prj2-card,
   #prj4-card {
@@ -776,7 +773,7 @@ body {
     height: 270px;
   }
 
-  .my-works h2 {
+  .my-recent-works h2 {
     width: 100%;
     border-bottom: none;
     color: #9490ff;
@@ -846,7 +843,7 @@ body {
     height: 105px;
   }
 
-  
+
   .popwindow-Container {
     height: min-content;
   }
@@ -860,7 +857,7 @@ body {
     text-align: center;
   }
 
-  .window-div-Img{
+  .window-div-Img {
     width: 80%;
     height: 350px;
   }
@@ -873,10 +870,9 @@ body {
   .button2 {
     margin-bottom: 5px;
   }
-.cancel {
-  width: 30px;
-  height: 30px;
-  
-}
 
+  .cancel {
+    width: 30px;
+    height: 30px;
+  }
 }
