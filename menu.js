@@ -266,22 +266,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
-/* form.addEventListener('input', () => {
-  const name = document.getElementById('name');
-  const message = document.getElementById('message');
-
-
-  localStorage.setItem('name', `${name.value}`);
-
-
-  localStorage.setItem('email', `${email.value}`);
-
-
-  localStorage.setItem('message', `${message.value}`);
-
-});
-*/
 const name = document.getElementById('name');
 
 message.value = localStorage.getItem('message');
@@ -289,9 +273,9 @@ message.value = localStorage.getItem('message');
 function localStorageData() {
   form.addEventListener('input', () => {
     const storageData = {
-      uName: name.value,
-      uEmail: email.value,
-      uMessage: message.value,
+      uName: `${name.value}`,
+      uEmail: `${email.value}`,
+      uMessage: `${message.value}`,
     };
     localStorage.setItem('storageData', JSON.stringify(storageData));
   });
