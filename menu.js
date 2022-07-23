@@ -267,7 +267,7 @@ form.addEventListener('submit', (e) => {
 });
 
 
-form.addEventListener('input', () => {
+/* form.addEventListener('input', () => {
   const name = document.getElementById('name');
   const message = document.getElementById('message');
 
@@ -284,5 +284,24 @@ form.addEventListener('input', () => {
 
 name.value = localStorage.getItem('name');
 email.value = localStorage.getItem('email');
-message.value = localStorage.getItem('message');
+message.value = localStorage.getItem('message');*/
+
+function localStorageData() {
+  form.addEventListener('input', () => {
+    const storageData = {
+      uName: name.value,
+      uEmail: email.value,
+      uMessage: message.value,
+    };
+    localStorage.setItem('storageData', JSON.stringify(storageData));
+  });
+}
+localStorageData();
+function getLocalStorage() {
+  const loadInfo = JSON.parse(localStorage.getItem('storageData'));
+  name.value = loadInfo.uName;
+  email.value = loadInfo.uEmail;
+  message.value = loadInfo.uMessage;
+}
+getLocalStorage();
 
