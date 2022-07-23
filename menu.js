@@ -265,3 +265,24 @@ form.addEventListener('submit', (e) => {
     messageValidator();
   }
 });
+
+
+form.addEventListener('input', () => {
+  const name = document.getElementById('name');
+  const message = document.getElementById('message');
+
+
+  localStorage.setItem('name', `${name.value}`);
+
+
+  localStorage.setItem('email', `${email.value}`);
+
+
+  localStorage.setItem('message', `${message.value}`);
+
+});
+
+name.value = localStorage.getItem('name');
+email.value = localStorage.getItem('email');
+message.value = localStorage.getItem('message');
+
