@@ -146,22 +146,24 @@
     <p>If you have an application you are interested in developing, a feature that you need built or a project
       that
       needs coding. I’d love to help with it </p>
-    <form action="https://formspree.io/f/myyoqezy" method="POST">
+    <form action="https://formspree.io/f/myyoqezy" method="POST" id="form-validation">
       <ul>
         <li>
           <label for="name"></label>
-          <input type="text" name="name" placeholder="Text Input" id="name" maxlength="30" required>
+          <input type="text" name="name" placeholder="Text Input" id="name" maxlength="30" required id="userName">
         </li>
         <li>
           <label for="email"></label>
           <input type="email" name="email" placeholder="example@gmail.com" id="email" required>
         </li>
+
         <li>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="enter text here" maxlength="500"
             required></textarea>
         </li>
-        <li>
+        <li class="valide">
           <button class="btn" name="submit" value="submit" type="submit" id="button">Submit</button>
+          <span class="error-handler" id="emailerror"></span>
         </li>
       </ul>
     </form>
