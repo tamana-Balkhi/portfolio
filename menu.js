@@ -234,3 +234,58 @@ btnId4.addEventListener('click', () => {
   i = 3;
   display();
 });
+
+
+
+//form validation //
+
+
+/*** function formvalodation() {
+
+  const emailerror = document.getElementById('emailerror');
+  const email = document.getElementById('email').Value;
+  const emailregex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/gm;
+
+  if (email.length == 0) {
+    emailerror.innerHtml = "email is reqiured"
+    return flase;
+  }
+  if (!email.match(emailregex)) {
+    emailerror.innerHtml = "lower case need"
+    return false;
+
+  }
+}**/
+
+function formvalidation() {
+  const form = document.getElementById('form-validation');
+  const email = document.getElementById('email').value;
+  const emailerror = document.getElementById('emailerror');
+
+  const emailrex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/gm;
+  if (email.match(emailrex)) {
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    emailerror.innerHTML = ' successful Validation ';
+    emailerror.style.color = '#00ff00';
+  }
+  else {
+    form.classList.remove('valid');
+    form.classList.add('invalid');
+    emailerror.innerHTML = 'Email address should be in lowercase';
+    emailerror.style.color = '#ff0000';
+  }
+}
+
+document.getElementById('email').addEventListener('keyup', formvalidation);
+
+const form = document.getElementById('form-validation');
+
+form.addEventListener('submit', (event) => {
+  // stop form submissio//
+  event.preventDefault();
+  formvalidation();
+  if (form.classList.contains('valid')) {
+    form.submit();
+  }
+});
