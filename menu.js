@@ -234,3 +234,34 @@ btnId4.addEventListener('click', () => {
   i = 3;
   display();
 });
+
+function messageValidator() {
+  const email = document.getElementById('email');
+  const form = document.getElementById('form-validation');
+  const validationmessage = document.getElementById('emailerror');
+
+  const regx = /[A-Z]/g;
+  if (regx.test(email.value)) {
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    validationmessage.innerHTML = 'Email should be written in lowercase';
+    validationmessage.style.color = '#f00';
+  } else {
+    form.classList.remove('valid');
+    form.classList.add('invalid');
+    validationmessage.innerHTML = 'Validated succesfully';
+    validationmessage.style.color = '#00ff00';
+  }
+}
+document.getElementById('email').addEventListener('keydown', messageValidator);
+
+const email = document.getElementById('email');
+const form = document.getElementById('form-validation');
+
+form.addEventListener('submit', (e) => {
+  const regx = /[A-Z]/g;
+  if (regx.test(email.value)) {
+    e.preventDefault();
+    messageValidator();
+  }
+});
