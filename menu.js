@@ -267,8 +267,9 @@ form.addEventListener('submit', (e) => {
 });
 
 const name = document.getElementById('name');
+const message = document.getElementById('message');
 
-message.value = localStorage.getItem('message');
+// message.value = localStorage.getItem('message');
 
 function localStorageData() {
   form.addEventListener('input', () => {
@@ -288,4 +289,3 @@ function getLocalStorage() {
   message.value = loadInfo.uMessage;
 }
 getLocalStorage();
-
