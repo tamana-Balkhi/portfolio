@@ -281,10 +281,10 @@ form.addEventListener('submit', (e) => {
   localStorage.setItem('message', `${message.value}`);
 
 });
+*/
+const name = document.getElementById('name');
 
-name.value = localStorage.getItem('name');
-email.value = localStorage.getItem('email');
-message.value = localStorage.getItem('message');*/
+message.value = localStorage.getItem('message');
 
 function localStorageData() {
   form.addEventListener('input', () => {
