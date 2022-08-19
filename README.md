@@ -10,7 +10,7 @@
 ## Live Demo
 
 you can visite my portfolio here:
-https://tamana-balkhi.github.io/
+ https://tamana-balkhi.github.io/portfolio/
 
 ## Getting Started
 
