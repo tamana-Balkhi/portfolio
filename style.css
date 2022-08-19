@@ -210,6 +210,10 @@ body {
   background-position: right;
 }
 */
+
+ #prj1-card img {
+    height: 150px;
+  }
 .my-works {
   display: flex;
   justify-content: center;
@@ -762,8 +766,8 @@ body {
     font-size: 15px;
   }
 
-  .prj-1 img {
-    height: 270px;
+  #prj1-card img {
+    height: 200px;
   }
 
   .prjs img {
