@@ -1,113 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <title>portfolio</title>
-</head>
+  <body>
+    <header>
+      <nav class="mobile-header">
+        <div class="mobile-v nav-bar">
+          <h2 id="logo2">Tamana Balkhi</h2>
+          <div>
+            <img
+              src="./images/hamburger.png"
+              id="hamburger"
+              alt="hamburger icon"
+            />
+          </div>
+        </div>
+        <div id="mobilemenu" class="hide m-List">
+          <div class="img-container">
+            <img
+              src="./images/cancel.png"
+              class="hide cancel"
+              id="cancel"
+              alt=""
+            />
+          </div>
+          <ul class="menu">
+            <li id="m-h1" class="Links">
+              <a href="#profile"
+                >Portfolio<img src="./images/arr1.png" alt="" class="larrow"
+              /></a>
+            </li>
+            <li id="m-h2" class="Links">
+              <a href="#about"
+                >About<img src="./images/arr1.png" alt="" class="larrow"
+              /></a>
+            </li>
+            <li id="m-h3" class="Links">
+              <a href="#contact"
+                >Contact<img src="./images/arr1.png" alt="" class="larrow"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktop-v nav-bar">
+        <h2 class="desk-header">tamana Balkhi</h2>
+        <ul class="desktop-h">
+          <li class="h"><a href="#profile">Portoflio</a></li>
+          <li class="h"><a href="#about">Projects</a></li>
+          <li class="h"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="portfolio" id="profile">
+      <div class="portfolio-desktop profile">
+        <h1>Tamana Balkhi</h1>
+        <h2>Software Developer</h2>
+      </div>
+    </section>
 
-<body>
-  <header>
-    <nav class=" mobile-header">
-      <div class="mobile-v nav-bar">
-        <h2 id="logo2">Tamana Balkhi</h2>
-        <div>
-          <img src="./images/hamburger.png" id="hamburger" alt="hamburger icon" />
+    <div class="skills">
+      <div class="Languages">
+        <p>
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <div class="skills-ul">
+          <ul>
+            <li class="list">Language</li>
+            <li id="sklls-sec">Javascript</li>
+            <li id="sklls-sec">Ruby</li>
+            <li id="sklls-sec">Html</li>
+            <li id="sklls-sec">Css</li>
+          </ul>
+          <ul>
+            <li class="list">Frameworks</li>
+            <li id="sklls-sec">Bootstrap</li>
+            <li id="sklls-sec">Ruby on Rail</li>
+            <li id="sklls-sec">RSPec</li>
+            <li id="sklls-sec">CapyBara</li>
+            <li id="sklls-sec">Selenium</li>
+          </ul>
+          <ul>
+            <li class="list">Skills</li>
+            <li id="sklls-sec">PostgreSql</li>
+            <li id="sklls-sec">Github</li>
+            <li id="sklls-sec">Codepen</li>
+            <li id="sklls-sec">Gitlab</li>
+            <li id="sklls-sec">Terminal</li>
+          </ul>
         </div>
       </div>
-      <div id="mobilemenu" class="hide m-List">
-        <div class="img-container">
-          <img src="./images/cancel.png" class="hide cancel" id="cancel" alt="" />
-        </div>
-        <ul class="menu">
-          <li id="m-h1" class="Links"><a href="#profile">Portfolio<img src="./images/arr1.png" alt=""
-                class="larrow"></a></li>
-          <li id="m-h2" class="Links"><a href="#about">About<img src="./images/arr1.png" alt="" class="larrow"></a></li>
-          <li id="m-h3" class="Links"><a href="#contact">Contact<img src="./images/arr1.png" alt="" class="larrow"></a>
+    </div>
+
+    <div class="contact">
+      <div class="hidden">
+        <p>work</p>
+      </div>
+      <div class="work-desk work">
+        <img src="./images/down-arrow.png" alt="" /> <span>work</span>
+      </div>
+      <div class="contact-list">
+        <ul class="icons">
+          <li>
+            <a href="https://github.com/tamana-Balkhi/">
+              <img src="./images/github.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tamana-balkhi-1212171b6/">
+              <img src="./images/linkedin1.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="https://wellfound.com/u/tamana-balkhi">
+              <img src="./images/Vector2.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/TAMANA1377">
+              <img src="./images/twitter.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@tamana.balkhi1377">
+              <img src="./images/Vector3.png" alt="image" />
+            </a>
           </li>
         </ul>
+        <div class="work-mobile work">
+          <img src="./images/down-arrow.png" alt="" /> <span>work</span>
+        </div>
       </div>
-    </nav>
-    <nav class="desktop-v nav-bar">
-      <h2 class="desk-header">tamana Balkhi</h2>
-      <ul class="desktop-h">
-        <li class="h"><a href="#profile">Portoflio</a></li>
-        <li class="h"><a href="#about">About</a></li>
-        <li class="h"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="portfolio" id="profile">
-    <div class="portfolio-desktop profile">
-      <h1>Tamana Balkhi</h1>
-      <h2>Software Developer</h2>
+      <div class="work work-desk">
+        <img src="./images/down-arrow.png" alt="" /> <span>work</span>
+      </div>
+      <div class="hidden">
+        <p>work</p>
+      </div>
     </div>
-  </section>
 
-  <div class="skills">
-    <div class="Languages">
+    <section class="my-recent-works" id="about">
+      <h2>MY RECENT WORK</h2>
+      <div class="line"></div>
+    </section>
+
+    <div class="contact-form" id="contact">
+      <h2>CONTACT US</h2>
       <p>
-        I can help you build a product , feature or website Look through some
-        of my work and experience! If you like what you see and have a project
-        you need coded, don’t hestiate to contact me.
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it
       </p>
-      <div class="skills-ul">
+      <form
+        id="form-validation"
+        action="https://formspree.io/f/myyoqezy"
+        method="POST"
+      >
         <ul>
-          <li class="list">Language</li>
-          <li>Javascript</li>
-          <li>Ruby</li>
-          <li>Html</li>
-          <li>Css</li>
-        </ul>
-        <ul>
-          <li class="list">Frameworks</li>
-          <li>Bootstrap</li>
-          <li>Ruby on Rail</li>
-          <li>RSPec</li>
-          <li>CapyBara</li>
-          <li>Selenium</li>
-        </ul>
-        <ul>
-          <li class="list">Skills</li>
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+          <li>
+            <label for="name"></label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Text Input"
+              id="name"
+              maxlength="30"
+              required
+            />
+          </li>
+          <li>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </li>
 
-  <div class="contact">
-    <div class="hidden">
-      <p>work</p>
+          <li>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="enter text here"
+              maxlength="500"
+              required
+            ></textarea>
+          </li>
+          <li class="valide">
+            <button
+              class="btn"
+              name="submit"
+              value="submit"
+              type="submit"
+              id="button"
+            >
+              Submit
+            </button>
+            <span id="emailerror"></span>
+          </li>
+        </ul>
+      </form>
     </div>
-    <div class="work-desk work">
-      <img src="./images/down-arrow.png" alt="" /> <span>work</span>
-    </div>
-    <div class="contact-list">
+    <hr />
+    <div class="media-email">
       <ul class="icons">
         <li>
-          <a href="https://twitter.com/TAMANA1377">
+          <a href="https://github.com/tamana-Balkhi">
             <img src="./images/github.png" alt="image" />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/tamana-balkhi-1212171b6/">
-            <img src="./images/linkedin1.png" alt="image" />
+            <img src="./images/Vector.png" alt="image" />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://wellfound.com/u/tamana-balkhi">
             <img src="./images/Vector2.png" alt="image" />
           </a>
         </li>
@@ -117,91 +243,14 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://medium.com/@tamana.balkhi1377">
             <img src="./images/Vector3.png" alt="image" />
           </a>
         </li>
       </ul>
-      <div class="work-mobile work">
-        <img src="./images/down-arrow.png" alt="" /> <span>work</span>
-      </div>
+      <p>tamana.balkhi1377@gmail.com</p>
     </div>
-    <div class="work work-desk">
-      <img src="./images/down-arrow.png" alt="" /> <span>work</span>
-    </div>
-    <div class="hidden">
-      <p>work</p>
-    </div>
-  </div>
 
-  <section class="my-recent-works" id="about">
-
-    <h2>MY RECENT WORK</h2>
-    <div class="line"></div>
-  </section>
-
-
-  <div class="contact-form" id="contact">
-    <h2>CONTACT US</h2>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project
-      that
-      needs coding. I’d love to help with it </p>
-    <form id="form-validation" action="https://formspree.io/f/myyoqezy" method="POST">
-      <ul>
-        <li>
-          <label for="name"></label>
-          <input type="text" name="name" placeholder="Text Input" id="name" maxlength="30" required>
-        </li>
-        <li>
-          <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-        </li>
-
-        <li>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="enter text here" maxlength="500"
-            required></textarea>
-        </li>
-        <li class="valide">
-          <button class="btn" name="submit" value="submit" type="submit" id="button">Submit</button>
-          <span id="emailerror"></span>
-        </li>
-      </ul>
-    </form>
-  </div>
-  <hr>
-  <div class="media-email">
-    <ul class="icons">
-      <li>
-        <a href="https://github.com/tamana-Balkhi">
-          <img src="./images/github.png" alt="image" />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/tamana-balkhi-1212171b6/">
-          <img src="./images/Vector.png" alt="image" />
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="./images/Vector2.png" alt="image" />
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/TAMANA1377">
-          <img src="./images/twitter.png" alt="image" />
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="./images/Vector3.png" alt="image" />
-        </a>
-      </li>
-    </ul>
-    <p>tamana.balkhi1377@gmail.com</p>
-  </div>
-
-
-  <script src="menu.js"></script>
-</body>
-
+    <script src="menu.js"></script>
+  </body>
 </html>

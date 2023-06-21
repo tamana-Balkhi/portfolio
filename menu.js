@@ -22,15 +22,16 @@ mobilemenu.addEventListener('click', () => {
 const myWorkContainer = document.querySelector('.my-recent-works');
 
 const popupwindowArray = [
-
   {
     myCardId: 'prj1-card',
     workImage: './images/todolist.PNG',
     image: 'images/todolist.PNG',
     workTitle: 'to do list',
     title: 'daily to do list',
-    paragraph: "To-do list is a tool that helps to organize your day.It simply lists the things that you need to do and allows you to mark them as complete",
-    workDescription: 'To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+    paragraph:
+      'To-do list is a tool that helps to organize your day.It simply lists the things that you need to do and allows you to mark them as complete',
+    workDescription:
+      'To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     workTools: ['css', 'html', 'javascript', 'webpack'],
     tech1: 'Html',
     tech2: 'javascript and webpack',
@@ -38,63 +39,64 @@ const popupwindowArray = [
     btnLive: 'https://tamana-balkhi.github.io/to-do-list/dist/',
     btnSource: 'https://github.com/tamana-Balkhi/to-do-list.git',
     myMbId: 'btnId1',
-
   },
 
   {
     myCardId: 'prj2-card',
-    workImage: './images/ImgPlaceholder.png',
-    image: 'images/SnapshootPortfolio.svg',
-    workTitle: 'Multi-Post Stories',
-    title: 'Multy Post - Stories 2',
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    workTools: ['css', 'html', 'boostrap', 'ruby'],
+    workImage: './images/exchangeRate.PNG',
+    image: 'images/exchangeRate.PNG',
+    workTitle: 'Currency Exchange',
+    title: 'Currency Exchange',
+    paragraph:
+      'A favorable exchange rate implies a beneficial ratio for converting currencies, resulting in advantages like greater purchasing power, reduced expenses, and enhanced competitiveness.',
+    workDescription:
+      'The exchange rate is a react API app that shows daily currency exchange.',
+    workTools: ['css', 'html', 'React', 'Redux'],
     tech1: 'Html',
-    tech2: 'Ruby on rails',
+    tech2: 'React',
     tech3: 'Css',
-    btnLive: 'https://tamana-balkhi.github.io/',
-    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
+    btnLive: 'https://deploy-preview-1--starlit-wisp-c9ce8a.netlify.app/',
+    btnSource: 'https://github.com/tamana-Balkhi/capstone-exchageRate.git ',
     myMbId: 'btnId2',
-
   },
 
   {
     myCardId: 'prj3-card',
-    workImage: './images/ImgPlaceholder.png',
-    image: 'images/SnapshootPortfolio.svg',
-    workTitle: 'Multi-Post Stories',
-    title: 'Multy Post - Stories 3',
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    workImage: './images/swimming.PNG',
+    image: 'images/swimming.PNG',
+    workTitle: 'swimming Class Reservation',
+    title: 'Swimming Class Reservation',
+    paragraph:
+      'This is the React front-end Swimming course booking web-application. This applications is responsive and users can load, create, and delete courses and reservations We use React for the front-end. In order to access the application users need to to be authorized as Admins then login.',
+    workDescription:
+      'This applications works with API endpoints and users can load, create, and delete Coursess and Add reservations. Users need to sign up or sign in to access the API endponits. They can sign up or sign in using the API endponts.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
-    tech1: 'Html',
+    tech1: 'React',
     tech2: 'Ruby on rails',
-    tech3: 'Css',
-    btnLive: 'https://tamana-balkhi.github.io/',
-    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
+    tech3: 'PostgreSQL',
+    btnLive: 'https://swimming.onrender.com/',
+    btnSource: 'https://github.com/amexabee/final-capstone.git ',
     myMbId: 'btnId3',
-
   },
 
   {
     myCardId: 'prj4-card',
-    workImage: './images/ImgPlaceholder.png',
-    image: 'images/SnapshootPortfolio.svg',
-    workTitle: 'Multi-Post Stories',
-    title: 'Multy Post - Stories 4',
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    workTools: ['css', 'html', 'boostrap', 'ruby'],
-    tech1: 'Html',
+    workImage: './images/expenser1.PNG',
+    image: 'images/expenser1.PNG',
+    workTitle: 'Budget App',
+    title: 'Budget App',
+    paragraph:
+      'Budget App is a mobile web application for group budget management. Track expenses, analyze spending habits with categorized transactions..',
+    workDescription:
+      'Budget App is a mobile web application for group budget management. Track expenses, analyze spending habits with categorized transactions.',
+    workTools: ['Ruby', 'ROR', 'PostgreSQL'],
+    tech1: 'Ruby',
     tech2: 'Ruby on rails',
-    tech3: 'Css',
-    btnLive: 'https://tamana-balkhi.github.io/',
-    btnSource: 'https://github.com/tamana-Balkhi/portfolio.git ',
+    tech3: 'PostgreSQL',
+    btnLive: 'https://firstbudget.onrender.com/',
+    btnSource: 'https://github.com/tamana-Balkhi/budgetAPP.git ',
     myMbId: 'btnId4',
-
   },
-
 ];
 
 const displayC = () => {
@@ -192,7 +194,8 @@ function display() {
   divButton.appendChild(popBtn1);
   divButton.appendChild(popBtn2);
 
-  document.querySelector('.windowTitle').textContent = popupwindowArray[i].title;
+  document.querySelector('.windowTitle').textContent =
+    popupwindowArray[i].title;
   document.querySelector('.cancel2').src = 'images/cancel.png';
   document.querySelector('.window-div-Img').src = popupwindowArray[i].image;
   document.querySelector('.divP').textContent = popupwindowArray[i].paragraph;
